@@ -8,3 +8,23 @@ if (window.console && window.console.info) {
 $(document).ready(function () {
   window.GOVUKFrontend.initAll()
 })
+
+// import MobileNav from '/mobile-navigation.js'
+
+// // Initialise mobile navigation
+// new MobileNav().init()
+
+
+const menuButton = document.querySelector('.js-app-mobile-nav-toggler');
+const mobileSubNav = document.querySelector('.app-subnav--mobile');
+
+menuButton.onclick = () => {
+  menuButton.classList.toggle('is-active');
+  mobileSubNav.classList.toggle('is-open');
+}
+
+const subLinks = document.querySelector('.app-subnav--mobile .app-subnav__link');
+
+subLinks.onclick = () => {
+  subLinks.classList.toggle('is-active');
+}
