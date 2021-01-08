@@ -46,7 +46,15 @@
 
 {% endblock %}
 
-{% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %}
+{% block main %}
+
+  {% block content %}
+
+  {%  endblock %}
+
+{% endblock %}
+
+{# {% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %} #}
 
 {% if useAutoStoreData %}
   {% block footer %}

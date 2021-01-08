@@ -23,6 +23,9 @@ $app-light-grey: #f8f8f8;
 @import "components/eyfs-header";
 @import "components/eyfs-mobile-navigation";
 
+// Styles added for EYFS page templates
+@import "layouts-eyfs/landing-page";
+
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 // added the CSS for the pagination at the bottom of the stepped guide - do not exist yet in the govuk-design-system - the code commented would restore the previous on the left anf next on the right 
 .stepped-pagination{
