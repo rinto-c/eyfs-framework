@@ -194,10 +194,6 @@
 
 //styles for social links
 
-.gem-c-share-links {
-
-}
-
 .gem-c-share-links--columns .gem-c-share-links__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(9.5em, 1fr));
@@ -312,8 +308,4 @@
     box-shadow: 0 2px 0 #fff;
     border: 1px #fff solid;
     min-width: 100px;
-}
-
-.gem-c-feedback__prompt-questions--something-is-wrong {
-
 }
