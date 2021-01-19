@@ -30,12 +30,11 @@ menuButton.onclick = () => {
 // Loop through and find all the sub headings
 const subLinks = document.querySelectorAll('.app-subnav--mobile .app-subnav__link');
 
-subLinks.onclick = () => {
-  subLinks.classList.toggle('is-active');
-}
-
-const subLinks2 = document.querySelector('.app-subnav--mobile .app-subnav__link--section-2');
-
-subLinks2.onclick = () => {
-  subLinks2.classList.toggle('is-active');
-}
+// build an array of the subLinks
+Array.from(subLinks).forEach(link => {
+  // listen for a click on subLinks
+  link.addEventListener('click', function(event) {
+    // target the speficic subLink that was clicked
+    this.classList.toggle('is-active');
+  });
+});
