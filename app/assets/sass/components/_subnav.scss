@@ -132,7 +132,7 @@
   .app-subnav__theme {
     margin: 0;
     padding: govuk-spacing(2) govuk-spacing(3) govuk-spacing(2) 0;
-    @include govuk-font(19);
+    font-size: govuk-px-to-rem(19px);
     font-weight: bold;
     &:first-of-type {
 
@@ -140,3 +140,9 @@
     }
   
   }
+
+
+
+  // Subnav new styles
+
+  

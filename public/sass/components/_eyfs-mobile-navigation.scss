@@ -1,6 +1,9 @@
 .app-mobile-nav {
     display: none;
     border-bottom: 1px solid $govuk-border-colour;
+    position: relative;
+    padding: 16px govuk-spacing(4) 17px govuk-spacing(4);
+    background-color: $app-light-grey;
   }
   
   .app-mobile-nav--active {
@@ -26,7 +29,7 @@
   .app-mobile-nav-subnav-toggler {
     position: relative;
     padding: 16px govuk-spacing(4) 17px govuk-spacing(4);
-    background-color: $app-light-grey;
+    background-color: govuk-colour("light-grey");
   }
   
   .app-mobile-nav-subnav-toggler__link {
@@ -89,4 +92,30 @@
     font-size: govuk-px-to-rem(19px); // sass-lint:disable-line no-duplicate-properties
     font-weight: normal;
   }
+
+
+  .app-mobile-nav-subnav-toggler__link {
+    @include govuk-typography-weight-bold; // Override .govuk-link weight
+    font-size: 19px; // We do not have a font mixin that produces 19px on mobile
+    font-size: govuk-px-to-rem(19px); // sass-lint:disable-line no-duplicate-properties
+  
+    &:not(:focus):hover {
+      color: $govuk-link-colour;
+    }
+  }
+  
+  // .app-mobile-nav-subnav-toggler__link,
+  // .app-mobile-nav__link {
+  //   text-decoration: none;
+  
+  //   // Expand the touch area of the link to the full menu width
+  //   &:after {
+  //     content: "";
+  //     position: absolute;
+  //     top: 0;
+  //     right: 0;
+  //     bottom: 0;
+  //     left: 0;
+  //   }
+  // }
   
