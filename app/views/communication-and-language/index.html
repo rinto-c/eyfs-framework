@@ -2,15 +2,11 @@
 
 {% set activePage = 'communication-and-language' %}
 
-{% set pageHeading = "Patterns" %}
+{% set pageHeading = "Communication and language" %}
 
 {% block pageContent %}
-
-    <span class="govuk-caption-xl">
-        Communication and language
-    </span>
         
-    <h1 class="govuk-heading-xl">
+    <h1 class="govuk-heading-l">
 
         {{pageHeading}}
 
@@ -20,14 +16,15 @@
     <p>All of the patterns in this section are supported by written guidance and contain coded examples where possible.</p>
     <p>Patterns often use one or more <a href="../components">components</a> and explain how to adapt them to the&nbsp;context.</p>
 
-    ## Design system
-    ablladsjslj
+    <p>Patterns are best practice design solutions for specific user-focused tasks and page&nbsp;types.</p>
 
     {{ appPagination ({
         items: [{
             nextHref: '/communication-and-language/conversations',
-            nextLabel: 'sdsd'
+            nextLabel: 'Conversations'
         }]
     }) }}
+
+
 
 {% endblock %}
