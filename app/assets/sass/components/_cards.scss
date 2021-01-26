@@ -55,6 +55,7 @@ $card-border-hover-color: #003078;
 
   &:active {
     border-color: $card-border-hover-color;
+    border-bottom-width: 0;
     bottom: - $card-border-width;
   }
 }
