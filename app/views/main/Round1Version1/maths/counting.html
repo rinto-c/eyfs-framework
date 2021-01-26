@@ -6,28 +6,6 @@
 {% set sectionHeading = 'Maths' %}
 {% set pageHeading = "Counting" %}
 
-{% block breadcrumbs %}
-
-   {{ govukBreadcrumbs({
-      collapseOnMobile: true,
-      items: [
-        {
-          text: "Home",
-          href: "/main/Round1Version1/hub"
-        },
-        {
-          text: sectionHeading,
-          href: activeSection
-        },
-        {
-          text: pageHeading or "default text",
-          href: activePage
-        }
-      ]
-    }) }} 
-
-{% endblock %}
-
 {% block pageContent %}
 
     <span class="govuk-caption-l">
