@@ -1,10 +1,10 @@
 {% extends "templates/two-column-with-subnav.html" %}
 
-{% set activePage = 'counting' %}
-{% set activeSection = 'maths-index' %}
+{% set activePage = 'widening-vocabulary' %}
+{% set activeSection = 'understanding-the-world-index' %}
 
-{% set sectionHeading = 'Maths' %}
-{% set pageHeading = "Counting" %}
+{% set sectionHeading = 'Understanding the world' %}
+{% set pageHeading = "Widening vocabulary" %}
 
 {% block breadcrumbs %}
 
@@ -31,7 +31,7 @@
 {% block pageContent %}
 
     <span class="govuk-caption-l">
-        Maths
+        Understanding the world
     </span>
         
     <h1 class="govuk-heading-l">
@@ -122,10 +122,10 @@
 
     {{ appPagination ({
         items: [{
-            prevHref: '/main/Round1Version1/maths/maths-index',
-            prevLabel: 'Maths',
-            nextHref: '/main/Round1Version1/maths/counting',
-            nextLabel: 'Number patterns'
+            prevHref: '/main/Round1Version1/understanding-the-world/understanding-the-world-index',
+            prevLabel: 'Diverse world',
+            nextHref: '/main/Round1Version1/understanding-the-world/widening-vocabulary',
+            nextLabel: 'Expressive arts and design'
         }]
     }) }}
 

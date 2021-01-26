@@ -23,18 +23,9 @@
       </p>
     </div>
 
-    {{ govukBreadcrumbs({
-      items: [
-        {
-          text: "Home",
-          href: "#"
-        },
-        {
-          text: pageHeading or "default text",
-          href: activePage
-        }
-      ]
-    }) }}
+    {% block breadcrumbs %}
+
+    {% endblock %}
 
   </div>
 
