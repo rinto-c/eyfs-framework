@@ -23,9 +23,40 @@
       </p>
     </div>
 
-    {% block breadcrumbs %}
-
-    {% endblock %}
+    {# Show three levels of breadcrumbs if child page, else if show two levels #}
+    {% if pageType == 'parent' %}
+      {{ govukBreadcrumbs({
+        collapseOnMobile: true,
+        items: [
+          {
+            text: "Home",
+            href: "/main/Round1Version1/hub"
+          },
+          {
+            text: pageHeading or "default text",
+            href: activePage
+          }
+        ]
+      }) }}
+    {% else %}
+      {{ govukBreadcrumbs({
+        collapseOnMobile: true,
+        items: [
+          {
+            text: "Home",
+            href: "/main/Round1Version1/hub"
+          },
+          {
+            text: sectionHeading,
+            href: activeSection
+          },
+          {
+            text: pageHeading or "default text",
+            href: activePage
+          }
+        ]
+      }) }}
+    {% endif %}
 
   </div>
 

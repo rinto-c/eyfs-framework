@@ -2,26 +2,9 @@
 
 {% set activePage = 'maths-index' %}
 {% set activeSection = 'maths-index' %}
+{% set pageType = 'parent' %}
 
 {% set pageHeading = "Maths" %}
-
-{% block breadcrumbs %}
-
-   {{ govukBreadcrumbs({
-      collapseOnMobile: true,
-      items: [
-        {
-          text: "Home",
-          href: "/main/Round1Version1/hub"
-        },
-        {
-          text: pageHeading or "default text",
-          href: activePage
-        }
-      ]
-    }) }} 
-
-{% endblock %}
 
 {% block pageContent %}
         

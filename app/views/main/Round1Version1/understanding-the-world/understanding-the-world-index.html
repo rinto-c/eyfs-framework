@@ -2,26 +2,9 @@
 
 {% set activePage = 'understanding-the-world-index' %}
 {% set activeSection = 'understanding-the-world-index' %}
+{% set pageType = 'parent' %}
 
 {% set pageHeading = "Understanding the world" %}
-
-{% block breadcrumbs %}
-
-   {{ govukBreadcrumbs({
-      collapseOnMobile: true,
-      items: [
-        {
-          text: "Home",
-          href: "/main/Round1Version1/hub"
-        },
-        {
-          text: pageHeading or "default text",
-          href: activePage
-        }
-      ]
-    }) }} 
-
-{% endblock %}
 
 {% block pageContent %}
         
@@ -33,17 +16,17 @@
 
     <p class="govuk-!-margin-bottom-6">Access resources, activity ideas and advice for teaching early years maths.</p>
 
-    <h2 class="govuk-heading-m">Maths resources</h2>
+    <h2 class="govuk-heading-m">Understanding the world resources</h2>
 
     <ul class="govuk-list govuk-body govuk-!-margin-bottom-6">
         <li>
-            <a class="govuk-link" href="/main/Round1Version1/maths/counting">Counting</a>
+            <a class="govuk-link" href="/main/Round1Version1/maths/counting">Personal experiences</a>
         </li>
         <li>
-            <a class="govuk-link" href="#">Number patterns</a>
+            <a class="govuk-link" href="#">Diverse world</a>
         </li>
         <li>
-            <a class="govuk-link" href="#">Spatial reasoning</a>
+            <a class="govuk-link" href="/main/Round1Version1/understanding-the-world/widening-vocabulary">Widening vocabulary</a>
         </li>
     </ul>
 

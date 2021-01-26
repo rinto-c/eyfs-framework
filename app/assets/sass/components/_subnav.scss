@@ -37,23 +37,23 @@
 
 .app-subnav--mobile {
 
-display: none;
+  display: none;
 
-&.is-open {
-  display: block;
+  &.is-open {
+    display: block;
 
-}
+  }
 }
 
 .app-subnav--mobile .app-subnav__section {
 
-display: none;
+  display: none;
 
 }
 
 .app-subnav--mobile .app-subnav__link.is-active + .app-subnav__section {
 
-display: block;
+  display: block;
 
 }
 
