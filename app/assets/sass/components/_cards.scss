@@ -122,7 +122,8 @@ $card-border-hover-color: #003078;
       background-position: right 4px top 50%;
     }
   
-    &:hover {
+    &:hover,
+    &:active {
       background-image: url(/public/images/chevron--hover.svg); // sass-lint:disable-line quotes
     }
   
