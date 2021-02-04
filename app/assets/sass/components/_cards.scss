@@ -1,6 +1,6 @@
 //styles for the NHScard component
 
-$card-border-width: 1px;
+$card-border-width: 2px;
 $card-border-bottom-width: 3px;
 $card-border-color: #1d70b8;
 $card-border-hover-color: #003078;
@@ -9,7 +9,7 @@ $card-border-hover-color: #003078;
   @include govuk-responsive-margin(5, 'bottom');
 
   background: govuk-colour("white");
-  border-bottom: $card-border-width solid $card-border-color;
+  box-shadow: 0 2px 0 0 $card-border-color;
   position: relative;
   width: 100%;
 }
@@ -31,7 +31,7 @@ $card-border-hover-color: #003078;
   ========================================================================== */
 
 .nhsuk-card--clickable {
-  border-bottom-width: $card-border-bottom-width;
+  border: 0;
 
   &:hover,
   &:active {
@@ -50,7 +50,11 @@ $card-border-hover-color: #003078;
   }
 
   &:hover {
-    border-color: $card-border-hover-color;
+    color: $govuk-link-hover-colour;
+    box-shadow:0 2px 0 0 $card-border-hover-color;
+  }
+  &:hover a {
+    color: $govuk-link-hover-colour;
   }
 
   &:active {
