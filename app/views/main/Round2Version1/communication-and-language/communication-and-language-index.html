@@ -1,6 +1,8 @@
-{% extends "templates/two-column-with-subnav.html" %}
+{% extends "main/Round2Version1/version_templates/two-column-with-subnav.html" %}
 
-{% set activePage = 'communication-and-language' %}
+{% set activePage = 'communication-and-language-index' %}
+{% set activeSection = 'communication-and-language-index' %}
+{% set pageType = 'parent' %}
 
 {% set pageHeading = "Communication and language" %}
 
@@ -43,10 +45,8 @@
 
         {{ appPagination ({
             items: [{
-                prevHref: '#',
-                prevLabel: 'Areas of learning',
-                nextHref: '#',
-                nextLabel: 'Exploring language'
+                nextHref: '/main/Round2Version1/communication-and-language/conversations',
+                nextLabel: 'Conversations'
             }]
         }) }}
 
