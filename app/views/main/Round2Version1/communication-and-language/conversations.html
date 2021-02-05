@@ -1,7 +1,9 @@
-{% extends "templates/two-column-with-subnav.html" %}
+{% extends "main/Round2Version1/version_templates/two-column-with-subnav.html" %}
 
 {% set activePage = 'conversations' %}
+{% set activeSection = 'communication-and-language-index' %}
 
+{% set sectionHeading = 'Communication and language' %}
 {% set pageHeading = "Conversations" %}
 
 {% block pageContent %}
@@ -25,8 +27,10 @@
 
     {{ appPagination ({
         items: [{
-            prevHref: '/communication-and-language',
-            prevLabel: 'Conversations'
+            prevHref: '/main/Round2Version1/communication-and-language/communication-and-language-index',
+            prevLabel: 'Communication and language',
+            nextHref: '/main/Round2Version1/communication-and-language/reading',
+            nextLabel: 'Reading'
         }]
     }) }}
 
