@@ -1,0 +1,37 @@
+{% extends "../version_templates/two-column-with-subnav.html" %}
+
+{% set activePage = 'comprehension' %}
+{% set activeSection = 'literacy-index' %}
+
+{% set sectionHeading = 'Literacy' %}
+{% set pageHeading = "Comprehension" %}
+
+{% block pageContent %}
+
+    <span class="govuk-caption-l">
+        {{sectionHeading}}
+    </span>
+        
+    <h1 class="govuk-heading-l">
+
+        {{pageHeading}}
+
+    </h1>
+
+    <p>Patterns are best practice design solutions for specific user-focused tasks and page&nbsp;types.</p>
+    <p>All of the patterns in this section are supported by written guidance and contain coded examples where possible.</p>
+    <p>Patterns often use one or more <a href="../components">components</a> and explain how to adapt them to the&nbsp;context.</p>
+
+    ## Design system
+    ablladsjslj
+
+    {{ appPagination ({
+        items: [{
+            prevHref: '../literacy/literacy-index',
+            prevLabel: 'Literacy',
+            nextHref: '../literacy/word-reading',
+            nextLabel: 'Word reading'
+        }]
+    }) }}
+
+{% endblock %}
