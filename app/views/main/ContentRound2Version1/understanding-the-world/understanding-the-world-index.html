@@ -1,4 +1,4 @@
-{% extends "main/Round2Version1/version_templates/two-column-with-subnav.html" %}
+{% extends "../version_templates/two-column-with-subnav.html" %}
 
 {% set activePage = 'understanding-the-world-index' %}
 {% set activeSection = 'understanding-the-world-index' %}
@@ -55,9 +55,9 @@
 
     {{ appPagination ({
         items: [{
-            prevHref: '#',
-            prevLabel: 'Spatial reasoning',
-            nextHref: '#',
+            prevHref: '../maths/reasoning',
+            prevLabel: 'Reasoning',
+            nextHref: '../understanding-the-world/personal-experiences',
             nextLabel: 'Personal experiences'
         }]
     }) }}

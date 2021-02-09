@@ -1,60 +1,63 @@
-{% extends "main/Round2Version1/version_templates/two-column-with-subnav.html" %}
+{% extends "../version_templates/two-column-with-subnav.html" %}
 
-{% set activePage = 'widening-vocabulary' %}
-{% set activeSection = 'understanding-the-world-index' %}
+{% set activePage = 'numbers-in-context' %}
+{% set activeSection = 'maths-index' %}
 
-{% set sectionHeading = 'Understanding the world' %}
-{% set pageHeading = "Widening vocabulary" %}
+{% set sectionHeading = 'Maths' %}
+{% set pageHeading = "Numbers in context" %}
 
 {% block pageContent %}
 
     <span class="govuk-caption-l">
-        Understanding the world
+        {{sectionHeading}}
     </span>
-        
+
     <h1 class="govuk-heading-l">
 
         {{pageHeading}}
 
     </h1>
 
-    <p>Learn more about widening vocabulary in understanding the world by exploring this page of resources.</p>
+    <p>Learn more about counting in maths by exploring this page of resources.</p>
 
     <h2 class="govuk-heading-m">
-        Why widening vocabulary is important
+        Why counting is important
     </h2>
 
-    <p>Being able to understand a wide range of words is important for children’s development.</p>
+    <p>It is an often overlooked fact that we all, whether children or adults, are constantly using and applying mathematics in our everyday lives.</p>
 
     <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
         <li>
-            improving language and literacy skills early in life helps children be more successful academically and socially
+            Research confirms that early experiences have long-lasting outcomes in terms of educational achievement and life chances
         </li>
         <li>
-            research has shown that children need to understand 98% of the words they read to understand what they are reading
+            You can make a real difference to ensure every child has a chance to become a confident learner and user of mathematics.
         </li>
     </ul>
 
-    {# Example of how to use numbered steps similar to govspeak #}
-    {# <ol class="steps govuk-list">
-        <li>
-            You could use this style for steps.
-        </li>
-        <li>
-            You must use full sentences in each step.
-        </li>
-        <li>
-            You must use a full stop too.
-        </li>
-    </ol> #}
+    <p>In this video, an expert in early years maths explains what’s changed in the new EYFS for counting in maths and offers some top tips on getting the most out of a child in this area.</p>
 
-    <p>In this video, an expert in early years communication explains what’s changed in the new EYFS for widening vocabulary and offers some top tips on getting the most out of a child in this area.</p>
+    <div class="eyfs-youtube-video govuk-!-margin-top-6 govuk-!-margin-bottom-2">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SYhhCcokBF8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <details class="govuk-details govuk-!-margin-bottom-6" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+            Video transcript
+            </span>
+        </summary>
+        <div class="govuk-details__text">
+            Helps explain the video as a text for screenreaders
+        </div>
+    </details>
+
 
     <h2 class="govuk-heading-m">
         What the EYFS framework says
     </h2>
 
-    <p>Children should listen to a broad selection of stories, non-fiction, rhymes and poems. As well as building important knowledge, this extends their familiarity with words that support understanding across domains. Enriching and widening children’s vocabulary will support later reading comprehension.</p>
+    <p>Children should be able to count confidently, develop a deep understanding of the numbers to 10, the relationships between them and the patterns within those numbers.</p>
 
     <h2 class="govuk-heading-m">
         What this means in practice
@@ -65,13 +68,34 @@
     <p>Here we’ve suggested just a few examples of the toys and activities you can provide to encourage development in some of the areas of numeracy, for early years.</p>
 
     <h2 class="govuk-heading-m">
-        Widening vocabulary activities
+        Counting activities
     </h2>
 
     <p><a href="#" class="govuk-link">Download activity worksheet </a>(PDF, 19.5 KB, 1 page)</p>
 
+    <div class="govuk-!-margin-bottom-4">
+        <figure class="eyfs-topic-images">
+            <img src="https://i.ibb.co/nfB1hFc/counting-plates-960x640.jpg" alt="Plates on a table in a nursery ready to start a counting exercise">
+        </figure>
+
+        <p>In this activity, the children will learn about numbers using counters on plates.</p>
+    </div>
+
+    <div class="govuk-!-margin-bottom-6">
+        <figure class="eyfs-topic-images">
+            <img src="https://i.ibb.co/R7NBgWc/outdoor-maths-960x640.jpg" alt="An outdoor maths exercise. The children have collected two of each type of item">
+        </figure>
+
+    <h3 class="govuk-heading-s">
+        Outdoor counting activities
+    </h3>
+
+
+        <p>An example of an outdoor counting activity.</p>
+    </div>
+
     <h2 class="govuk-heading-m">
-        How widening vocabulary is linked to other areas of the EYFS
+        How counting is linked to other areas of the EYFS
     </h2>
 
     <p>If leaders, staff and parents can help to equip young children with a ‘can do’ attitude around maths, giving them the confidence to try things out and discover new skills in the same way they do for other areas of learning, we will have made a massive step in the right direction.</p>
@@ -88,6 +112,10 @@
 
     <p>The children are now offered a counting collection in a different area of pre-school each week and this is added onto the weekly planning, the children choose an individual collection and decide what the objects will be counted into (cups, bowls, frames, bags) and how they will record the amount, this has had a positive impact and increased the social working between the children and a great way to group items to get an altogether total and increase the child’s unitary counting.
     </p>
+
+    {{ govukInsetText({
+        text: "Activities had a positive impact and increased the social working between the children"
+    }) }}
 
     <div class="call-to-action">
         <h3 class="govuk-heading-m">Check your understanding</h3>
@@ -113,10 +141,10 @@
 
     {{ appPagination ({
         items: [{
-            prevHref: '#',
-            prevLabel: 'Diverse world',
-            nextHref: '#',
-            nextLabel: 'Expressive arts and design'
+            prevHref: '../maths/maths-index',
+            prevLabel: 'Maths',
+            nextHref: '../maths/patterns-and-connections',
+            nextLabel: 'Patterns and connections'
         }]
     }) }}
 

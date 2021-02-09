@@ -1,15 +1,15 @@
-{% extends "main/Round2Version1/version_templates/two-column-with-subnav.html" %}
+{% extends "../version_templates/two-column-with-subnav.html" %}
 
-{% set activePage = 'widening-vocabulary' %}
-{% set activeSection = 'understanding-the-world-index' %}
+{% set activePage = 'self-expression' %}
+{% set activeSection = 'expressive-arts-and-design-index' %}
 
-{% set sectionHeading = 'Understanding the world' %}
-{% set pageHeading = "Widening vocabulary" %}
+{% set sectionHeading = 'Expressive arts and design' %}
+{% set pageHeading = "Self expression" %}
 
 {% block pageContent %}
 
     <span class="govuk-caption-l">
-        Understanding the world
+        {{sectionHeading}}
     </span>
         
     <h1 class="govuk-heading-l">
@@ -31,7 +31,7 @@
             improving language and literacy skills early in life helps children be more successful academically and socially
         </li>
         <li>
-            research has shown that children need to understand 98% of the words they read to understand what they are reading
+            research has shown that children need to understand
         </li>
     </ul>
 
@@ -113,10 +113,10 @@
 
     {{ appPagination ({
         items: [{
-            prevHref: '#',
-            prevLabel: 'Diverse world',
-            nextHref: '#',
-            nextLabel: 'Expressive arts and design'
+            prevHref: '../expressive-arts-and-design/imagination-and-creativity',
+            prevLabel: 'Imagination and creativity',
+            nextHref: '../expressive-arts-and-design/communicating-through-arts',
+            nextLabel: 'Communicating through arts'
         }]
     }) }}
 

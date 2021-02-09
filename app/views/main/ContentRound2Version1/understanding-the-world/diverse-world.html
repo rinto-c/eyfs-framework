@@ -1,15 +1,15 @@
-{% extends "main/Round2Version1/version_templates/two-column-with-subnav.html" %}
+{% extends "../version_templates/two-column-with-subnav.html" %}
 
-{% set activePage = 'widening-vocabulary' %}
+{% set activePage = 'diverse-world' %}
 {% set activeSection = 'understanding-the-world-index' %}
 
 {% set sectionHeading = 'Understanding the world' %}
-{% set pageHeading = "Widening vocabulary" %}
+{% set pageHeading = "Diverse world" %}
 
 {% block pageContent %}
 
     <span class="govuk-caption-l">
-        Understanding the world
+        {{sectionHeading}}
     </span>
         
     <h1 class="govuk-heading-l">
@@ -31,7 +31,7 @@
             improving language and literacy skills early in life helps children be more successful academically and socially
         </li>
         <li>
-            research has shown that children need to understand 98% of the words they read to understand what they are reading
+            research has shown that children need to understand
         </li>
     </ul>
 
@@ -113,10 +113,10 @@
 
     {{ appPagination ({
         items: [{
-            prevHref: '#',
-            prevLabel: 'Diverse world',
-            nextHref: '#',
-            nextLabel: 'Expressive arts and design'
+            prevHref: '../understanding-the-world/personal-experiences',
+            prevLabel: 'Personal experiences',
+            nextHref: '../understanding-the-world/widening-vocabulary',
+            nextLabel: 'Widening vocabulary'
         }]
     }) }}
 

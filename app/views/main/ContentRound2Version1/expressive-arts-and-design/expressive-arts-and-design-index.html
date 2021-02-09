@@ -1,10 +1,10 @@
-{% extends "main/Round2Version1/version_templates/two-column-with-subnav.html" %}
+{% extends "../version_templates/two-column-with-subnav.html" %}
 
-{% set activePage = 'understanding-the-world-index' %}
-{% set activeSection = 'understanding-the-world-index' %}
+{% set activePage = 'expressive-arts-and-design-index' %}
+{% set activeSection = 'expressive-arts-and-design-index' %}
 {% set pageType = 'parent' %}
 
-{% set pageHeading = "Understanding the world" %}
+{% set pageHeading = "Expressive arts and design" %}
 
 {% block pageContent %}
 
@@ -55,10 +55,10 @@
 
     {{ appPagination ({
         items: [{
-            prevHref: '#',
-            prevLabel: 'Spatial reasoning',
-            nextHref: '#',
-            nextLabel: 'Personal experiences'
+            prevHref: '../understanding-the-world/widening-vocabulary',
+            prevLabel: 'Widening vocabulary',
+            nextHref: '../expressive-arts-and-design/imagination-and-creativity',
+            nextLabel: 'Imagination and creativity'
         }]
     }) }}
 

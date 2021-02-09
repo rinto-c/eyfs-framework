@@ -1,4 +1,4 @@
-{% extends "main/Round2Version1/version_templates/two-column-with-subnav.html" %}
+{% extends "../version_templates/two-column-with-subnav.html" %}
 
 {% set activePage = 'maths-index' %}
 {% set activeSection = 'maths-index' %}
@@ -54,10 +54,10 @@
 
     {{ appPagination ({
         items: [{
-            prevHref: '/main/Round2Version1/maths/maths-index',
+            prevHref: '../literacy/writing',
             prevLabel: 'Writing',
-            nextHref: '/main/Round2Version1/maths/counting',
-            nextLabel: 'Counting'
+            nextHref: '../maths/numbers-in-context',
+            nextLabel: 'Numbers in context'
         }]
     }) }}
 
