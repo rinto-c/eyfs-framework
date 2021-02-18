@@ -15,32 +15,28 @@ $(document).ready(function () {
 // new MobileNav().init()
 
 // Open/close mobile nav
-// const menuButton = document.querySelector('.js-app-mobile-nav-toggler');
-// const mobileSubNav = document.querySelector('.app-subnav--mobile');
+const menuButton = document.querySelector('.js-app-mobile-nav-toggler');
+const mobileSubNav = document.querySelector('.app-subnav--mobile');
 
-// menuButton.onclick = () => {
-//   menuButton.classList.toggle('is-active');
-//   mobileSubNav.classList.toggle('app-mobile-nav--active');
+menuButton.onclick = () => {
+  menuButton.classList.toggle('is-active');
+  mobileSubNav.classList.toggle('app-mobile-nav--active');
 
-//   // TODO: Close all the subLinks sections when we close the mobile nav
-// }
+  // TODO: Close all the subLinks sections when we close the mobile nav
+}
 
 
 
 // Open/close eyfs nav-bar--mobile
-const stickyMenu = document.querySelector('.js-eyfs-sticky-nav-toggler');
-const body = document.body;
-const html = document.getElementsByTagName( 'html' )[0];
-const mobileStickySubNav = document.querySelector('.app-subnav--mobile');
+// const stickyMenu = document.querySelector('.js-eyfs-sticky-nav-toggler');
+// const mobileStickySubNav = document.querySelector('.app-subnav--mobile');
 
-stickyMenu.onclick = () => {
-  stickyMenu.classList.toggle('is-active');
-  mobileStickySubNav.classList.toggle('app-mobile-nav--active');
-  body.classList.toggle('eyfs-no-scroll');
-  html.classList.toggle('eyfs-no-scroll');
+// stickyMenu.onclick = () => {
+//   stickyMenu.classList.toggle('is-active');
+//   mobileStickySubNav.classList.toggle('app-mobile-nav--active');
 
-  // TODO: Close all the subLinks sections when we close the mobile nav
-}
+//   // TODO: Close all the subLinks sections when we close the mobile nav
+// }
 
 
 
