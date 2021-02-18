@@ -1,13 +1,44 @@
-//styles for the NHScard component
+//styles for the EYFS areas of learning card component
 
 $card-border-width: 2px;
 $card-border-bottom-width: 3px;
 $card-border-color: #1d70b8;
 $card-border-hover-color: #003078;
 
+.nhsuk-card-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: govuk-spacing(2);
+  padding: 0;
+
+  @include mq($until: desktop) {
+    margin-bottom: govuk-spacing(6);
+  }
+}
+
+.nhsuk-card-group__item {
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 0;
+
+  .nhsuk-card {
+    margin-bottom: govuk-spacing(5);
+  }
+
+  @include mq($until: desktop) {
+
+    .nhsuk-card {
+      margin-bottom: govuk-spacing(3);
+    }
+
+    &:last-child .nhsuk-card {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .nhsuk-card {
   @include govuk-responsive-margin(5, 'bottom');
-
   background: govuk-colour("white");
   box-shadow: 0 2px 0 0 $card-border-color;
   position: relative;
@@ -19,6 +50,15 @@ $card-border-hover-color: #003078;
   @include govuk-responsive-padding(5);
 
   position: relative;
+}
+
+.nhsuk-card__content a {
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
 }
 
 .nhsuk-card__heading,
@@ -37,15 +77,16 @@ $card-border-hover-color: #003078;
   &:active {
     cursor: pointer;
 
-    .nhsuk-card__heading a,
-    .nhsuk-card__link {
-      color: $govuk-link-hover-colour;
-      text-decoration: none;
+    // redundant sytles – check with Jesse before deleting
+    // .nhsuk-card__heading a,
+    // .nhsuk-card__link {
+    //   color: $govuk-link-hover-colour;
+    //   // text-decoration: none;
 
-      &:focus {
-        color: $govuk-focus-colour;
-      }
-    }
+    //   &:focus {
+    //     color: $govuk-focus-colour;
+    //   }
+    // }
 
   }
 
@@ -64,55 +105,17 @@ $card-border-hover-color: #003078;
   }
 }
 
-
-.nhsuk-card-group {
-  display: flex;
-  flex-wrap: wrap;
-
-  margin-bottom: govuk-spacing(2);
-  padding: 0;
-
-  @include mq($until: desktop) {
-    margin-bottom: govuk-spacing(6);
-  }
-}
-
-.nhsuk-card-group__item {
-  display: flex;
-
-  list-style-type: none;
-  margin-bottom: 0;
-
-  .nhsuk-card {
-    margin-bottom: govuk-spacing(5);
-  }
-
-  @include mq($until: desktop) {
-
-    .nhsuk-card {
-      margin-bottom: govuk-spacing(3);
-    }
-
-    &:last-child .nhsuk-card {
-      margin-bottom: 0;
-    }
-  }
-
-  .nhsuk-card--feature {
-    margin-top: 0;
-  }
-}
-
-.nhsuk-card-group--list {
-  .nhsuk-card-group__item {
-    &:not(:last-child) {
-      .nhsuk-card {
-        border-bottom-width: 0;
-        margin-bottom: 0;
-      }
-    }
-  }
-}
+// redundant styles - check with Jesse before deleting
+// .nhsuk-card-group--list {
+//   .nhsuk-card-group__item {
+//     &:not(:last-child) {
+//       .nhsuk-card {
+//         border-bottom-width: 0;
+//         margin-bottom: 0;
+//       }
+//     }
+//   }
+// }
 
 /* With icon
   ========================================================================== */
@@ -156,3 +159,40 @@ $card-border-hover-color: #003078;
       }
     }
   }
+
+// to try for css shapes instead of the svg icon
+
+// .chevron-right {
+//   position: absolute;
+//   top: 50%;
+//   right: 20px;
+//   margin-top: -8px;
+// }
+
+// .chevron-right::before {
+//   border-style: solid;
+//   border-width: 0.15em 0.15em 0 0;
+//   content: '';
+//   display: inline-block;
+//   height: 0.6em;
+//   width: 0.6em;
+//   right: 0;
+//   position: relative;
+//   bottom: 4px;
+//   transform: rotate(45deg);
+//   vertical-align: middle;
+// }
+
+// to try for an inline svg for the icon
+
+// .eyfs-chevron-icon--right {
+//   display: inline-block;
+//   // width: 30px;
+//   // height: 30px;
+//   position: absolute;
+//   right: 0;
+//   margin-top: -2px;
+//   margin-right: 10px;
+//   vertical-align: middle;
+//   // border-color: $govuk-link-colour;
+// }
