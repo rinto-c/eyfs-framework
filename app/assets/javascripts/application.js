@@ -123,6 +123,17 @@ subNavSeven.onclick = () => {
   // TODO: Close all the subLinks sections when we close the mobile nav
 }
 
+// // Open/close sub nav mobile
+const subNavEight = document.querySelector('.topic-eight');
+const subNavItemEight = document.querySelector('.app-mobile-nav__subnav--topic-eight');
+
+subNavEight.onclick = () => {
+  subNavEight.classList.toggle('app-mobile-nav__subnav-toggler--active');
+  subNavItemEight.classList.toggle('app-mobile-nav__subnav--active');
+
+  // TODO: Close all the subLinks sections when we close the mobile nav
+}
+
 // // Sub navigation
 
 // // Loop through and find all the sub headings
