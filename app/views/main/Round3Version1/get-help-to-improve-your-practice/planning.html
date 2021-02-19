@@ -1,0 +1,39 @@
+{% extends "../version_templates/two-column-with-subnav.html" %}
+
+{% set activePage = 'planning' %}
+{% set activeSection = 'ghtiyp-index' %}
+
+{% set sectionHeading = 'Get help to improve your practice' %}
+{% set pageHeading = "Planning" %}
+
+{% block pageContent %}
+
+    <span class="govuk-caption-l">
+        {{sectionHeading}}
+    </span>
+
+    <h1 class="govuk-heading-l">
+
+        {{pageHeading}}
+
+    </h1>
+
+    <p class=govuk-body>This content will cover how early years settings can plan their curriculum with some advice and best practices for planning.</p>
+
+    <p class=govuk-body>The content could also cover key differences in the new EYFS, how to look at what they already cover with the children and where they may need to make changes.</p>
+
+    <p class=govuk-body>The content will give advice for nursery leaders on providing staff training on the curriculum and identifying gaps in knowledge.</p>
+
+    
+
+
+<!--     {{ appPagination ({
+        items: [{
+            prevHref: '../maths/maths-index',
+            prevLabel: 'Maths',
+            nextHref: '../maths/patterns-and-connections',
+            nextLabel: 'Patterns and connections'
+        }]
+    }) }} -->
+
+{% endblock %}
