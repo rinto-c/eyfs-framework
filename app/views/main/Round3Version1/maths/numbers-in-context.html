@@ -327,17 +327,23 @@
         What other nurseries and childminders are doing
     </h2>
 
-    <div class="govuk-inset-text">
-        <p>
+    {# Inset text component using nunjucks templating #}
+    {% set insetTextHtml %}
+
+        <p class="govuk-body">
             “I am noticing the importance of giving children real opportunities to use numbers in context through finding out about the child’s interests, engaging children in simple tasks and cooking. Making the most of real life opportunities for spotting numbers and shapes as we walk around the environment and community.”
         </p>
-        
-        <p>
+        <p class="govuk-body">
             “I realised that it is not just about displaying numbers and number lines in the environment. It is about making numbers real and using them all day long, in everything that I plan for and offer as well as closely observing what the child is doing.”
         </p>
-
-        <p>Childminder </p>
-    </div>
+        <p class="govuk-body">
+            Childminder
+        </p>
+        
+    {% endset %}
+    {{ govukInsetText({
+        html: insetTextHtml
+    }) }}
 
     <h2 class="govuk-heading-l">
         Summary
