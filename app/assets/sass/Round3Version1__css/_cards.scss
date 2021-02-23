@@ -162,8 +162,27 @@ $card-border-hover-color: #003078;
     }
   }
 
-.eyfs-learning-card__icon {
-  float: right;
-  vertical-align: middle;
-  margin-left: 0.5em;;
+// Experiment to see if the css background icon for the cards can be inline as svg with flexbox
+
+// .eyfs-learning-card__icon {
+//   float: right;
+//   vertical-align: middle;
+//   margin-left: 0.5em;;
+// }
+
+// This method works well for inline svg in the html and aligning with flex
+.eyfs-card__flex {
+  display: flex;
+  place-content: start space-between;
+  align-items: flex-start;
+
+  &:hover svg {
+    color: $govuk-link-hover-colour;
+  }
+}
+
+.eyfs-card__flex svg {
+  min-width: 14px;
+  margin-left: 15px;
+  color: $govuk-link-colour;
 }

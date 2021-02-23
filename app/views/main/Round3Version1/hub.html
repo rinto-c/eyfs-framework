@@ -39,73 +39,81 @@
     <!--Cards section-->
     <div class="landing-page__section--grey govuk-!-padding-bottom-3">
       <div class="govuk-width-container">
-                  <h2 class="govuk-heading-l">Areas of learning</h2>
+        <h2 class="govuk-heading-l">Areas of learning</h2>
 
         <p class="govuk-body govuk-!-margin-bottom-7">Find information about each area of learning in the EYFS and get ideas for activities you can do with early years children.</p>
         <ul class="govuk-grid-row nhsuk-card-group">
-            <li class="govuk-grid-column-one-half nhsuk-card-group__item">
-                <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--icon">
-                    <div class="nhsuk-card__content">
-                        <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold govuk-link--no-visited-state"href="./communication-and-language/communication-and-language-index">Communication and language</a>
-                    </div>
-                </div>
-            </li>
+          <li class="govuk-grid-column-one-half nhsuk-card-group__item">
+            <div class="nhsuk-card nhsuk-card--clickable">
+              {# Inline svg element as opposed to using the chevron icon as a css background for the card. If css fails, users will still be able to see the icon. Helps distribute the space around the card evenly (padding 25px applied on all sides)#}
+              <div class="nhsuk-card__content eyfs-card__flex">
+                <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold govuk-link--no-visited-state"href="./communication-and-language/communication-and-language-index">
+                Communication and language</a>
+                <svg width="14" height="25" viewBox="0 0 14 25" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.999999 1.5L12 12.5L1 23.5" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+            </div>
+          </li>
 
-            <li class="govuk-grid-column-one-half nhsuk-card-group__item">
-                <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--icon">
-                    <div class="nhsuk-card__content">
-                        <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold govuk-link--no-visited-state"href="./physical-development/physical-development-index">Physical development</a>
-                    </div>
-                </div>
-            </li>
+          <li class="govuk-grid-column-one-half nhsuk-card-group__item">
+            <div class="nhsuk-card nhsuk-card--clickable">
+              <div class="nhsuk-card__content eyfs-card__flex">
+                <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold govuk-link--no-visited-state"href="./physical-development/physical-development-index">
+                Physical development</a>
+                <svg width="14" height="25" viewBox="0 0 14 25" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.999999 1.5L12 12.5L1 23.5" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+            </div>
+          </li>
 
-            <li class="govuk-grid-column-one-half nhsuk-card-group__item">
-                <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--icon">
-                    <div class="nhsuk-card__content">
-                        <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold govuk-link--no-visited-state"href="./personal-social-and-emotional-development/personal-social-and-emotional-development-index">Personal, social and emotional development</a>
-                    </div>
-                </div>
-            </li>
+          <li class="govuk-grid-column-one-half nhsuk-card-group__item">
+            <div class="nhsuk-card nhsuk-card--clickable">
+              <div class="nhsuk-card__content eyfs-card__flex">
+                <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold govuk-link--no-visited-state"href="./personal-social-and-emotional-development/personal-social-and-emotional-development-index">
+                Personal, social and emotional development</a>
+                <svg width="14" height="25" viewBox="0 0 14 25" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.999999 1.5L12 12.5L1 23.5" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+            </div>
+          </li>
 
-            <li class="govuk-grid-column-one-half nhsuk-card-group__item">
-                <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--icon">
-                    <div class="nhsuk-card__content">
-                        <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold govuk-link--no-visited-state"href="./literacy/literacy-index">Literacy</a>
-                    </div>
-                </div>
-            </li>
+          <li class="govuk-grid-column-one-half nhsuk-card-group__item">
+            <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--icon">
+              <div class="nhsuk-card__content">
+                <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold govuk-link--no-visited-state"href="./literacy/literacy-index">Literacy</a>
+              </div>
+            </div>
+          </li>
 
-            <li class="govuk-grid-column-one-half nhsuk-card-group__item">
-                <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--icon">
-                    <div class="nhsuk-card__content">
-                        <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold govuk-link--no-visited-state"href="./maths/maths-index">Maths</a>
-                    </div>
-                </div>
-            </li>
+          <li class="govuk-grid-column-one-half nhsuk-card-group__item">
+            <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--icon">
+              <div class="nhsuk-card__content">
+                <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold govuk-link--no-visited-state"href="./maths/maths-index">Maths</a>
+              </div>
+            </div>
+          </li>
 
-            <li class="govuk-grid-column-one-half nhsuk-card-group__item">
-                <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--icon">
-                    <div class="nhsuk-card__content">
-                        <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold govuk-link--no-visited-state"href="./understanding-the-world/understanding-the-world-index">Understanding the world</a>
-                    </div>
-                </div>
-            </li>
+          <li class="govuk-grid-column-one-half nhsuk-card-group__item">
+            <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--icon">
+              <div class="nhsuk-card__content">
+                <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold govuk-link--no-visited-state"href="./understanding-the-world/understanding-the-world-index">Understanding the world</a>
+              </div>
+            </div>
+          </li>
 
-            <li class="govuk-grid-column-one-half nhsuk-card-group__item">
-                <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--icon">
-                    <div class="nhsuk-card__content">
-                        <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold govuk-link--no-visited-state"href="./expressive-arts-and-design/expressive-arts-and-design-index">Expressive arts and design</a>
-                    </div>
-                </div>
-            </li>
+          <li class="govuk-grid-column-one-half nhsuk-card-group__item">
+            <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--icon">
+              <div class="nhsuk-card__content">
+                <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold govuk-link--no-visited-state"href="./expressive-arts-and-design/expressive-arts-and-design-index">Expressive arts and design</a>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
-
-
-
-
-
     <!--End of cards section-->
 
     <!--Get help to improve your practice-->
