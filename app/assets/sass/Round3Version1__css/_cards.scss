@@ -181,6 +181,10 @@ $card-border-hover-color: #003078;
   }
 }
 
+.eyfs-card__flex > a {
+  align-self: center;
+}
+
 .eyfs-card__flex svg {
   min-width: 14px;
   margin-left: 15px;
