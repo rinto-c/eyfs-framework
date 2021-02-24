@@ -29,17 +29,11 @@ $(document).ready(function () {
 
 // Open/close eyfs nav-bar--mobile
 const stickyMenu = document.querySelector('.js-eyfs-sticky-nav-toggler');
-const body = document.body;
-const html = document.getElementsByTagName( 'html' )[0];
 const mobileStickySubNav = document.querySelector('.app-subnav--mobile');
 
 stickyMenu.onclick = () => {
   stickyMenu.classList.toggle('is-active');
   mobileStickySubNav.classList.toggle('app-mobile-nav--active');
-  body.classList.toggle('eyfs-no-scroll');
-  html.classList.toggle('eyfs-no-scroll');
-
-  // TODO: Close all the subLinks sections when we close the mobile nav
 }
 
 
