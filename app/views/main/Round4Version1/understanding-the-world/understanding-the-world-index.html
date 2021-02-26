@@ -1,0 +1,65 @@
+{% extends "../version_templates/two-column-with-subnav.html" %}
+
+{% set activePage = 'understanding-the-world-index' %}
+{% set activeSection = 'understanding-the-world-index' %}
+{% set pageType = 'parent' %}
+
+{% set pageHeading = "Understanding the world" %}
+
+{% block pageContent %}
+
+    <h1 class="govuk-heading-l">
+
+        {{pageHeading}}
+
+    </h1>
+
+    <p class="govuk-!-margin-bottom-6">Access resources, activity ideas and advice for teaching understanding the world to early years children.</p>
+
+    <h2 class="govuk-heading-m">Understanding the world resources</h2>
+
+    <ul class="govuk-list govuk-body govuk-!-margin-bottom-6">
+        <li>
+            <a class="govuk-link" href="../maths/counting">Personal experiences</a>
+        </li>
+        <li>
+            <a class="govuk-link" href="#">Diverse world</a>
+        </li>
+        <li>
+            <a class="govuk-link" href="../understanding-the-world/widening-vocabulary">Widening vocabulary</a>
+        </li>
+    </ul>
+
+    <h2 class="govuk-heading-m">What the early years foundation stage (EYFS) framework says about understanding the world</h2>
+
+    <p class="govuk-body">
+        Understanding the world involves guiding children to make sense of their physical world and their community.</p>
+
+          <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+             Read more
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          <p>The frequency and range of children’s personal experiences increases their knowledge and sense of the world around them – from visiting parks, libraries and museums to meeting important members of society such as police officers, nurses and firefighters.</p>
+          <p>In addition, listening to a broad selection of stories, non-fiction, rhymes and poems will foster their understanding of our culturally, socially, technologically and ecologically diverse world.</p>
+          <p>As well as building important knowledge, this extends their familiarity with words that support understanding across domains.</p>
+          <p>Enriching and widening children’s vocabulary will support later reading comprehension.</p>
+        </div>
+      </details>
+
+
+
+
+
+    {{ appPagination ({
+        items: [{
+            prevHref: '../maths/reasoning',
+            prevLabel: 'Reasoning',
+            nextHref: '../understanding-the-world/personal-experiences',
+            nextLabel: 'Personal experiences'
+        }]
+    }) }}
+
+{% endblock %}

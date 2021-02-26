@@ -1,0 +1,64 @@
+{% extends "../version_templates/two-column-with-subnav.html" %}
+
+{% set activePage = 'maths-index' %}
+{% set activeSection = 'maths-index' %}
+{% set pageType = 'parent' %}
+
+{% set pageHeading = "Maths" %}
+
+{% block pageContent %}
+
+    <h1 class="govuk-heading-l">
+
+        {{pageHeading}}
+
+    </h1>
+
+    <p class="govuk-!-margin-bottom-6">Access resources, activity ideas and advice for teaching early years maths.</p>
+
+    <h2 class="govuk-heading-m">Early years maths resources</h2>
+
+    <ul class="govuk-list govuk-body govuk-!-margin-bottom-6">
+        <li>
+            <a class="govuk-link" href="../maths/counting">Counting</a>
+        </li>
+        <li>
+            <a class="govuk-link" href="#">Number patterns</a>
+        </li>
+        <li>
+            <a class="govuk-link" href="#">Spatial reasoning</a>
+        </li>
+    </ul>
+
+    <h2 class="govuk-heading-m">What the EYFS framework says about maths</h2>
+
+
+
+<p class="govuk-body">
+  Developing a strong grounding in number is essential so that all children develop the necessary building blocks to excel mathematically.</p>
+
+    <details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+       Read more
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <p>Children should be able to count confidently, develop a deep understanding of the numbers to 10, the relationships between them and the patterns within those numbers.</p>
+    <p>By providing frequent and varied opportunities to build and apply this understanding - such as using manipulatives, including small pebbles and tens frames for organising counting - children will develop a secure base of knowledge and vocabulary from which mastery of mathematics is built.</p>
+    <p>In addition, it is important that the curriculum includes rich opportunities for children to develop their spatial reasoning skills across all areas of mathematics including shape, space and measures.</p>
+    <p>It is important that children develop positive attitudes and interests in mathematics, look for patterns and relationships, spot connections, ‘have a go’, talk to adults and peers about what they notice and not be afraid to make mistakes.</p>
+  </div>
+</details>
+
+
+    {{ appPagination ({
+        items: [{
+            prevHref: '../literacy/writing',
+            prevLabel: 'Writing',
+            nextHref: '../maths/numbers-in-context',
+            nextLabel: 'Numbers in context'
+        }]
+    }) }}
+
+{% endblock %}
