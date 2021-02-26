@@ -1,0 +1,41 @@
+{% extends "../version_templates/two-column-with-subnav.html" %}
+
+{% set activePage = 'reducing-paperwork' %}
+{% set activeSection = 'ghtiyp-index' %}
+
+{% set sectionHeading = 'Get help to improve your practice' %}
+{% set pageHeading = "Reducing paperwork" %}
+
+{% block pageContent %}
+
+    <span class="govuk-caption-l">
+        {{sectionHeading}}
+    </span>
+
+    <h1 class="govuk-heading-l">
+
+        {{pageHeading}}
+
+    </h1>
+
+    
+    <p class="govuk-body">This content will cover why reducing paperwork is one of the key aims of the reforms. It will provide guidance on what should and shouldn’t be recorded, and how to make effective observations.</p>
+
+    <p class="govuk-body">The content may contain some case studies from EYFS early adopters about how they’ve managed to balance making effective observations with reducing paperwork.</p>
+
+    <p class="govuk-body">The content may include links to the relevant parts of Development Matters, information from Ofsted and other useful documents.</p>
+
+
+    
+
+
+<!--     {{ appPagination ({
+        items: [{
+            prevHref: '../maths/maths-index',
+            prevLabel: 'Maths',
+            nextHref: '../maths/patterns-and-connections',
+            nextLabel: 'Patterns and connections'
+        }]
+    }) }} -->
+
+{% endblock %}

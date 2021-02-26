@@ -1,0 +1,31 @@
+{% set html %}
+   <p>We’d like to use analytics cookies so we can understand how you use the service and make improvements.</p>
+{% endset %}
+
+{{ govukCookieBanner({
+  ariaLabel: "Cookies on Help for early years providers",
+  messages: [
+    {
+      headingText: "Cookies on Help for early years providers",
+      html: html,
+      actions: [
+        {
+          text: "Accept analytics cookies",
+          type: "button",
+          name: "cookies",
+          value: "accept"
+        },
+        {
+          text: "Reject analytics cookies",
+          type: "button",
+          name: "cookies",
+          value: "reject"
+        },
+        {
+          text: "View cookies",
+          href: "#"
+        }
+      ]
+    }
+  ]
+}) }}
