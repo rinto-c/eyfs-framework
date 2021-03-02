@@ -48,7 +48,7 @@
   
   {% include "includes/eyfs-header.html" %}
 
-  {% include "./version_includes/nav-bar--mobile.html" %}
+  {% include "./version_includes/subnav-mobile.html" %}
 
 {% endblock %}
 
@@ -76,9 +76,10 @@
             text: "Cookies"
           },
           {
-            href: "/prototype-admin/clear-data",
-            text: "Clear data (delete this before final prod)"
+            href: "mailto:webmaster@example.com",
+            text: "Contact"
           }
+
         ]
       }
     }) }}
@@ -92,3 +93,9 @@
   {% endblock %}
   <!-- GOV.UK Prototype Kit {{releaseVersion}} -->
 {% endblock %}
+
+
+ <!--          {
+            href: "/prototype-admin/clear-data",
+            text: "Clear data (delete this before final prod)"
+          } -->
