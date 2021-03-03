@@ -46,9 +46,10 @@
 {% block header %}
   {% include "includes/cookie-banner.html" %}
   
-  {% include "./version_includes/eyfs-header.html" %}
+  {% include "main/Round4Version1/version_includes/eyfs-header.html" %}
 
-  {% include "./version_includes/nav-bar--mobile.html" %}
+  {# We are taking the navigation outside of the header to put it below the phase banner #}
+  {# {% include "./version_includes/nav-bar--mobile.html" %} #}
 
 {% endblock %}
 
