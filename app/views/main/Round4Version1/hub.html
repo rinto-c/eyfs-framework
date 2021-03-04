@@ -23,12 +23,13 @@
 
   </div>
 
-  <div id="eyfs-sticky-nav__mobile" class="eyfs-sticky-nav eyfs-sticky-nav--clickable">
+  {# Removing the menu from the homepage to mirror the sidebar nav on desktop #}
+  {# <div id="eyfs-sticky-nav__mobile" class="eyfs-sticky-nav eyfs-sticky-nav--clickable">
       <button id="eyfs-sticky-nav-toggler" class="govuk-button eyfs-sticky-nav__button eyfs-sticky-nav__link eyfs-sticky-nav-toggler js-eyfs-sticky-nav-toggler" aria-controls="app-mobile-nav">
           EYFS Resources
       </button>
       {% include "main/Round4Version1/version_includes/subnav-mobile.html" %}
-  </div>
+  </div> #}
 
 
   <main class="govuk-main-wrapper govuk-!-padding-bottom-1">
@@ -95,36 +96,53 @@
           </li>
 
           <li class="govuk-grid-column-one-half nhsuk-card-group__item">
-            <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--icon">
-              <div class="nhsuk-card__content">
-                <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold govuk-link--no-visited-state"href="./literacy/literacy-index">Literacy</a>
+            <div class="nhsuk-card nhsuk-card--clickable">
+              <div class="nhsuk-card__content eyfs-card__flex">
+                <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold govuk-link--no-visited-state"href="./literacy/literacy-index">
+                Literacy</a>
+                <svg width="14" height="25" viewBox="0 0 14 25" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.999999 1.5L12 12.5L1 23.5" stroke="currentColor" stroke-width="2"/>
+                </svg>
               </div>
             </div>
           </li>
 
           <li class="govuk-grid-column-one-half nhsuk-card-group__item">
-            <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--icon">
-              <div class="nhsuk-card__content">
-                <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold govuk-link--no-visited-state"href="./maths/maths-index">Maths</a>
+            <div class="nhsuk-card nhsuk-card--clickable">
+              <div class="nhsuk-card__content eyfs-card__flex">
+                <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold govuk-link--no-visited-state"href="./maths/maths-index">
+                Maths</a>
+                <svg width="14" height="25" viewBox="0 0 14 25" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.999999 1.5L12 12.5L1 23.5" stroke="currentColor" stroke-width="2"/>
+                </svg>
               </div>
             </div>
           </li>
 
           <li class="govuk-grid-column-one-half nhsuk-card-group__item">
-            <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--icon">
-              <div class="nhsuk-card__content">
-                <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold govuk-link--no-visited-state"href="./understanding-the-world/understanding-the-world-index">Understanding the world</a>
+            <div class="nhsuk-card nhsuk-card--clickable">
+              <div class="nhsuk-card__content eyfs-card__flex">
+                <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold govuk-link--no-visited-state"href="./understanding-the-world/understanding-the-world-index">
+                Understanding the world</a>
+                <svg width="14" height="25" viewBox="0 0 14 25" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.999999 1.5L12 12.5L1 23.5" stroke="currentColor" stroke-width="2"/>
+                </svg>
               </div>
             </div>
           </li>
 
           <li class="govuk-grid-column-one-half nhsuk-card-group__item">
-            <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--icon">
-              <div class="nhsuk-card__content">
-                <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold govuk-link--no-visited-state"href="./expressive-arts-and-design/expressive-arts-and-design-index">Expressive arts and design</a>
+            <div class="nhsuk-card nhsuk-card--clickable">
+              <div class="nhsuk-card__content eyfs-card__flex">
+                <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold govuk-link--no-visited-state"href="./expressive-arts-and-design/expressive-arts-and-design-index">
+                Expressive arts and design</a>
+                <svg width="14" height="25" viewBox="0 0 14 25" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.999999 1.5L12 12.5L1 23.5" stroke="currentColor" stroke-width="2"/>
+                </svg>
               </div>
             </div>
           </li>
+          
         </ul>
       </div>
     </div>
