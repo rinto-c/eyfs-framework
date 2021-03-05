@@ -1,23 +1,10 @@
-.eyfs-wrapper {
-
-    width: 100%;
-}
-
-.eyfs-landing-page__section--grey {
+.eyfs-areas-of-learning__section {
 
     background-color: govuk-colour("light-grey");
     @include govuk-responsive-padding(8, "top");
-    @include govuk-responsive-padding(8, "bottom");
+    @include govuk-responsive-padding(4, "bottom");
 
 }
-
-.landing-page__section--border-bottom-blue {
-
-    border-bottom: 10px solid govuk-colour("blue");
-
-}
-
-
 
 //styles for the card component
   
