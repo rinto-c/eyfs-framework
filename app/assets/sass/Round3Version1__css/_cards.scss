@@ -21,12 +21,10 @@ $card-border-hover-color: #003078;
   position: relative;
 }
 
-.nhsuk-card__content a {
-  text-decoration: none;
-
-  &:focus {
-    text-decoration: none;
-  }
+.nhsuk-card__content a,
+.nhsuk-card__content a:focus:hover,
+.nhsuk-card__content a:focus:active {
+  text-decoration: none !important;
 }
 
 .nhsuk-card__heading,
@@ -41,29 +39,23 @@ $card-border-hover-color: #003078;
 .nhsuk-card--clickable {
   border: 0;
 
-  &:hover,
-  &:active {
+  a:not(:focus):hover,
+  a:not(:focus):active {
     cursor: pointer;
     text-decoration: underline;
-
-    .nhsuk-card__heading a,
-    .nhsuk-card__link {
-      color: $govuk-link-hover-colour;
-      text-decoration: none;
-
-      &:focus {
-        color: $govuk-focus-colour;
-      }
-    }
 
   }
 
   &:hover {
-    color: $govuk-link-hover-colour;
+    color: $govuk-link-text-colour;
     box-shadow:0 2px 0 0 $card-border-hover-color;
   }
   &:hover a {
-    color: $govuk-link-hover-colour;
+    color: #0b0c0c;
+  }
+
+  a:focus:hover {
+    color: #0b0c0c !important;
   }
 
   &:active {
