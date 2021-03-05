@@ -4,6 +4,7 @@ $card-border-width: 2px;
 $card-border-bottom-width: 3px;
 $card-border-color: #1d70b8;
 $card-border-hover-color: #003078;
+$govuk-link-text-colour: #1d70b8;
 
 .nhsuk-card {
   @include govuk-responsive-margin(5, 'bottom');
