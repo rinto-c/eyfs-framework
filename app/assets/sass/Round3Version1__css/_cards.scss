@@ -4,7 +4,6 @@ $card-border-width: 2px;
 $card-border-bottom-width: 3px;
 $card-border-color: #1d70b8;
 $card-border-hover-color: #003078;
-$govuk-link-text-colour: #1d70b8;
 
 .nhsuk-card {
   @include govuk-responsive-margin(5, 'bottom');
@@ -48,15 +47,15 @@ $govuk-link-text-colour: #1d70b8;
   }
 
   &:hover {
-    color: $govuk-link-text-colour;
+    color: $govuk-text-colour;
     box-shadow:0 2px 0 0 $card-border-hover-color;
   }
   &:hover a {
-    color: #0b0c0c;
+    color: $govuk-link-hover-colour;
   }
 
   a:focus:hover {
-    color: #0b0c0c !important;
+    color: $govuk-text-colour;
   }
 
   &:active {
