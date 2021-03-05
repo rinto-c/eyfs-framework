@@ -1,5 +1,7 @@
 {% extends "main/Round4Version1/layout.html" %}
 
+{% set pageHome = true %}
+
 {% block pageTitle %}
   Help for early years providers
 {% endblock %}
@@ -19,6 +21,13 @@
         This is a prototype. Content is likely to change rapidly
       </span>
       </p>
+    </div>
+
+    <div id="eyfs-sticky-nav__mobile" class="eyfs-sticky-nav eyfs-sticky-nav--clickable" style="display: none">
+      <button id="eyfs-sticky-nav-toggler" class="govuk-button eyfs-sticky-nav__button eyfs-sticky-nav__link eyfs-sticky-nav-toggler js-eyfs-sticky-nav-toggler" aria-controls="app-mobile-nav">
+          EYFS Resources
+      </button>
+      {% include "main/Round4Version1/version_includes/subnav-mobile.html" %}
     </div>
 
   </div>
