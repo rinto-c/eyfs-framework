@@ -1,33 +1,7 @@
-{% extends "main/Round4Version1/layout.html" %}
-
-{% block pageTitle %}
-  Help for early years providers
-{% endblock %}
-
-{% block content %}
-  <!--Until we find a fix for the cards not accepting click function without including this menu, we have to use it in the DOM and call it display none with the govuk class -->
-  <div id="eyfs-sticky-nav__mobile" class="eyfs-sticky-nav eyfs-sticky-nav--clickable govuk-!-display-none">
-    <button id="eyfs-sticky-nav-toggler" class="govuk-button eyfs-sticky-nav__button eyfs-sticky-nav__link eyfs-sticky-nav-toggler js-eyfs-sticky-nav-toggler" aria-controls="app-mobile-nav">
-        EYFS Resources
-    </button>
-    {% include "main/Round4Version1/version_includes/subnav-mobile.html" %}
-  </div>
-  <!--End of-->
-
-  <main class="govuk-main-wrapper">
-    <div class="govuk-width-container">
-      <div class="govuk-grid-row govuk-!-margin-bottom-7">
-        <div class="govuk-grid-column-two-thirds">
-          <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
-          Help for early years providers
-          </h1>
-          <p class="govuk-body-l">Information, guidance and practical support for delivering the early years foundation stage (EYFS) framework.</p>
-        </div>
-      </div>
-    </div>
+<!--Copy of the cards section-->
 
     <!--Cards section-->
-    <div class="eyfs-areas-of-learning__section">
+    <div class="landing-page__section--grey govuk-!-padding-bottom-3">
       <div class="govuk-width-container">
         {# We align the content that might span across the full width of the container into two-thirds for readability purposes. Same principle as the section 'Get help to improve your practice' #}
         <div class="govuk-grid-row">
@@ -129,56 +103,3 @@
       </div>
     </div>
     <!--End of cards section-->
-
-    <!--Get help to improve your practice-->
-    <div class="govuk-width-container govuk-!-padding-top-8 govuk-!-margin-bottom-6">
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds">
-          <h2 class="govuk-heading-l">Get help to improve your practice</h2>
-
-          <p class="govuk-body"><a class="govuk-link" href="get-help-to-improve-your-practice/ghtiyp-index">Overview</a></p>
-
-          <p class="govuk-body"><a class="govuk-link" href="get-help-to-improve-your-practice/planning">Planning</a></p>
-
-          <p class="govuk-body"><a class="govuk-link" href="get-help-to-improve-your-practice/reducing-paperwork">Reducing paperwork</a></p>
-
-          <p class="govuk-body"><a class="govuk-link" href="get-help-to-improve-your-practice/send">Identifying and supporting children with special educational needs and disability (SEND)</a></p>
-
-          <p class="govuk-body"><a class="govuk-link" href="get-help-to-improve-your-practice/oral-health">Oral health</a></p>
-
-          <p class="govuk-body govuk-!-margin-bottom-8"><a class="govuk-link" href="get-help-to-improve-your-practice/working-with-parents">Working in partnership with parents</a></p>
-
-          <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-
-          <h2 class="govuk-heading-l">Other useful resources</h2>
-
-          <p class="govuk-body"><a class="govuk-link" href="#">Changes to the early years foundation stage (EYFS) framework</a></p>
-
-          <p class="govuk-body"><a class="govuk-link" href="#">Statutory framework for the early years foundation stage (PDF, 43 pages, 239KB)</a></p>
-
-          <p class="govuk-body govuk-!-margin-bottom-9"><a class="govuk-link" href="#">Development Matters, non-statutory curriculum guidance for the early years foundation stage (PDF, 77 pages 682KB)</a></p>
-
-          <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-
-          <!--Signup alert -->
-          <div class="eyfs-signup-link govuk-!-display-none-print govuk-!-margin-top-9 govuk-!-margin-bottom-5 eyfs-signup-link--with-background-and-border">
-            <div class="eyfs-signup-link__inner">
-              <svg class="eyfs-signup-link__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 0 459.334 459.334">
-              <path fill="black" d="M177.216 404.514c-.001.12-.009.239-.009.359 0 30.078 24.383 54.461 54.461 54.461s54.461-24.383 54.461-54.461c0-.12-.008-.239-.009-.359H175.216zM403.549 336.438l-49.015-72.002v-89.83c0-60.581-43.144-111.079-100.381-122.459V24.485C254.152 10.963 243.19 0 229.667 0s-24.485 10.963-24.485 24.485v27.663c-57.237 11.381-100.381 61.879-100.381 122.459v89.83l-49.015 72.002a24.76 24.76 0 0 0 20.468 38.693H383.08a24.761 24.761 0 0 0 20.469-38.694z"></path>
-              </svg>
-              <h3 class="govuk-heading-s eyfs-signup-link__title">Stay up to date with EYFS</h3>
-              <a class="govuk-link govuk-!-font-size-19" href="#">Sign up to get emails when we change any early years foundation stage (EYFS) information on this website</a>
-            </div>
-          </div>
-          <!--End of-->
-
-          {% include "./version_includes/social-links.html" %}
-
-          <!--The blue line should be part of the footer, but this has not been a sight for services but mainstream gov.uk site  -->
-          {# <div class="landing-page__section--border-bottom-blue"></div> #}
-
-    </div>
-    <!--End of-->
-    
-  </main>
-{% endblock %}
