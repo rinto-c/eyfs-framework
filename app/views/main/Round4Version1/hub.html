@@ -10,7 +10,7 @@
 
 <div class="eyfs-wrapper">
 
-  <div class="govuk-width-container">
+  {# <div class="govuk-width-container">
 
     <div class="govuk-phase-banner">
       <p class="govuk-phase-banner__content">
@@ -21,7 +21,7 @@
         This is a prototype. Content is likely to change rapidly
       </span>
       </p>
-    </div>
+    </div> #}
 
     <div id="eyfs-sticky-nav__mobile" class="eyfs-sticky-nav eyfs-sticky-nav--clickable" style="display: none">
       <button id="eyfs-sticky-nav-toggler" class="govuk-button eyfs-sticky-nav__button eyfs-sticky-nav__link eyfs-sticky-nav-toggler js-eyfs-sticky-nav-toggler" aria-controls="app-mobile-nav">
@@ -213,9 +213,11 @@
 
     {% include "includes/social-links.html" %}
 
-    {% include "includes/feedback-banner.html" %}
+    {# {% include "includes/feedback-banner.html" %} #}
 
-    <div class="landing-page__section--border-bottom-blue"></div>
+
+    <!--The blue line should be part of the footer, but this has not been a sight for services but mainstream gov.uk site  -->
+    {# <div class="landing-page__section--border-bottom-blue"></div> #}
 
   </main>
 
