@@ -47,25 +47,27 @@ $card-border-hover-color: #003078;
   &:hover,
   &:active {
     cursor: pointer;
-    text-decoration: underline;
+
+    // By default there is no underline, colour alone is not enough on hover, therefore we need to bring the underline back whilst users hover
+    .eyfs-card__content a {
+      color: $govuk-link-hover-colour;
+      text-decoration: underline;
+
+      // Enables the standard govuk focus behaviour for link texts whilst they are on focus state
+      &:focus {
+        color: $govuk-text-colour;
+        text-decoration: none;
+      }
+    }
   }
 
-  &:hover {
-    box-shadow:0 2px 0 0 $card-border-hover-color;
-  }
-
-  &:hover a {
-    color: $govuk-link-hover-colour;
-  }
-
-  a:focus,
-  a:hover {
-    color: $govuk-text-colour;
-    //Turns the text colour to black when on focus
-  }
-
+  &:hover,
   &:active {
-    border-color: $card-border-hover-color;
+    box-shadow: 0 2px 0 0 $card-border-hover-color;
+  }
+
+  // Nudges the card by 2px to the bottom to give the click behaviour when active
+  &:active {
     border-bottom-width: 0;
     bottom: - $card-border-width;
   }
@@ -84,18 +86,19 @@ $card-border-hover-color: #003078;
     color: $govuk-link-hover-colour;
   }
 
-}
+  a {
+    text-decoration: none;
+  }
 
-.eyfs-card__content a {
-  text-decoration: none;
-}
+  // Maintains the vertical alignment center in Safari mobile browser
+  & > a {
+    align-self: center;
+  }
 
-.eyfs-card__content > a {
-  align-self: center;
-}
+  svg {
+    min-width: 14px;
+    margin-left: 15px;
+    color: $govuk-link-colour;
+  }
 
-.eyfs-card__content svg {
-  min-width: 14px;
-  margin-left: 15px;
-  color: $govuk-link-colour;
 }
