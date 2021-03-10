@@ -131,14 +131,18 @@ subNavEight.onclick = () => {
 // // Sub navigation
 
 // // Loop through and find all the sub headings
-// const subLinks = document.querySelectorAll('.app-mobile-nav__list .app-mobile-nav-subnav-toggler');
+// const subLinks = document.querySelectorAll('.app-mobile-nav-subnav-toggler');
+// const subMenus = document.querySelectorAll('.app-mobile-nav-subnav-toggler').nextElementSibling;
+// console.log(subLinks.nextElementSibling)
 
 // // build an array of the subLinks
 // Array.from(subLinks).forEach(link => {
 //   // listen for a click on subLinks
 //   link.addEventListener('click', function(event) {
+//   console.log('clicked')
 //     // target the speficic subLink that was clicked
 //     this.classList.toggle('app-mobile-nav__subnav--active');
+//     this.nextElementSibling('.app-mobile-nav__subnav').toggle('govuk-visually-hidden')
 //   });
 // });
 
