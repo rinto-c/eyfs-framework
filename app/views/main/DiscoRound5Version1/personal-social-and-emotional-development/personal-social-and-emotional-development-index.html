@@ -1,0 +1,74 @@
+{% extends "../version_templates/two-column-with-subnav.html" %}
+
+{% set activePage = 'personal-social-and-emotional-development-index' %}
+{% set activeSection = 'personal-social-and-emotional-development-index' %}
+{% set pageType = 'parent' %}
+
+{% set pageHeading = "Personal, social and emotional development" %}
+
+{% block pageContent %}
+
+    <h1 class="govuk-heading-l">
+
+        {{pageHeading}}
+
+    </h1>
+
+
+        <p class="govuk-!-margin-bottom-6">Access resources, activity ideas and advice for teaching personal, social and emotional development to early years children.</p>
+
+        <h2 class="govuk-heading-m">Personal, social and emotional development resources</h2>
+
+        <ul class="govuk-list govuk-body govuk-!-margin-bottom-6">
+            <li>
+                <a class="govuk-link" href="../personal-social-and-emotional-development/emotions">Emotions</a>
+            </li>
+            <li>
+                <a class="govuk-link" href="../personal-social-and-emotional-development/sense-of-self">Sense of self</a>
+            </li>
+            <li>
+                <a class="govuk-link" href="../personal-social-and-emotional-development/relationships">Relationships</a>
+            </li>
+        </ul>
+
+        <h2 class="govuk-heading-m">What the early years foundation stage (EYFS) framework says about personal, social and emotional development
+        </h2>
+
+        <p class="govuk-body">
+            Children’s personal, social and emotional development (PSED) is crucial for children to lead healthy and happy lives, and is fundamental to their cognitive development. </p>
+
+              <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                 Read more
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              <p>Underpinning their personal development are the important attachments that shape their social world.</p>
+
+              <p>Strong, warm and supportive relationships with adults enable children to learn how to understand their own feelings and those of others.</p>
+
+              <p>Children should be supported to manage emotions, develop a positive sense of self, set themselves simple goals, have confidence in their own abilities, to persist and wait for what they want and direct attention as necessary.</p>
+
+              <p>Through adult modelling and guidance, they will learn how to look after their bodies, including healthy eating, and manage personal needs independently.</p>
+
+              <p>Through supported interaction with other children they learn how to make good friendships, co-operate and resolve conflicts peaceably.</p>
+
+              <p>These attributes will provide a secure platform from which children can achieve at school and in later life.</p>
+            </div>
+          </details>
+
+
+
+
+
+        {{ appPagination ({
+            items: [{
+                prevHref: '../physical-development/fine-motor-skills',
+                prevLabel: 'Fine motor skills',
+                nextHref: '../personal-social-and-emotional-development/emotions',
+                nextLabel: 'Emotions'
+            }]
+        }) }}
+
+    {% endblock %}

@@ -1,0 +1,37 @@
+{% extends "../version_templates/two-column-with-subnav.html" %}
+
+{% set activePage = 'core-strength-and-coordination' %}
+{% set activeSection = 'physical-development-index' %}
+
+{% set sectionHeading = 'Physical development' %}
+{% set pageHeading = "Core strength and co-ordination" %}
+
+{% block pageContent %}
+
+    <span class="govuk-caption-l">
+        {{sectionHeading}}
+    </span>
+        
+    <h1 class="govuk-heading-l">
+
+        {{pageHeading}}
+
+    </h1>
+
+    <p>Patterns are best practice design solutions for specific user-focused tasks and page&nbsp;types.</p>
+    <p>All of the patterns in this section are supported by written guidance and contain coded examples where possible.</p>
+    <p>Patterns often use one or more <a href="../components">components</a> and explain how to adapt them to the&nbsp;context.</p>
+
+    ## Design system
+    ablladsjslj
+
+    {{ appPagination ({
+        items: [{
+            prevHref: '../physical-development/physical-development-index',
+            prevLabel: 'Physical development',
+            nextHref: '../physical-development/gross-motor-skills',
+            nextLabel: 'Gross motor skills'
+        }]
+    }) }}
+
+{% endblock %}

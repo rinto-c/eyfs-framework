@@ -1,0 +1,81 @@
+{% extends "main/Round5Version1/layout.html" %}
+
+{% block pageTitle %}
+  {{pageHeading}} - Help for early years providers - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+  <div class="eyfs-wrapper">
+
+    <div id="eyfs-sticky-nav__mobile" class="eyfs-sticky-nav eyfs-sticky-nav--clickable">
+      <button id="eyfs-sticky-nav-toggler" class="govuk-button eyfs-sticky-nav__button eyfs-sticky-nav__link eyfs-sticky-nav-toggler js-eyfs-sticky-nav-toggler" aria-controls="app-mobile-nav">
+          EYFS Resources
+      </button>
+      {% include "main/Round4Version1/version_includes/subnav-mobile.html" %}
+    </div>
+
+  </div>
+
+  <div class="govuk-width-container">
+
+    {# Show three levels of breadcrumbs if child page, else if show two levels #}
+    {% if pageType == 'parent' %}
+      {{ govukBreadcrumbs({
+        collapseOnMobile: true,
+        items: [
+          {
+            text: "Home",
+            href: "/main/Round4Version1/hub"
+          },
+          {
+            text: pageHeading or "default text",
+            href: activePage
+          }
+        ]
+      }) }}
+    {% else %}
+      {{ govukBreadcrumbs({
+        collapseOnMobile: true,
+        items: [
+          {
+            text: "Home",
+            href: "/main/Round4Version1/hub"
+          },
+          {
+            text: sectionHeading,
+            href: activeSection
+          },
+          {
+            text: pageHeading or "default text",
+            href: activePage
+          }
+        ]
+      }) }}
+    {% endif %}
+
+  </div>
+
+  <div class="govuk-width-container">
+    <div class="govuk-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-third">
+          {% include "../version_includes/subnav.html" %}
+        </div>
+
+        <div class="govuk-grid-column-two-thirds">
+          <main id="main-content" class="app-content" role="main">
+          
+              {% block pageContent %}
+
+              {% endblock %}
+
+              {% include "main/Round4Version1/version_includes/helpful_tools.html" %}
+
+          </main>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends "../version_templates/two-column-with-subnav.html" %}
+
+{% set activePage = 'ghtiyp-index' %}
+{% set activeSection = 'ghtiyp-index' %}
+{% set pageType = 'parent' %}
+
+{% set pageHeading = "Get help to improve your practice" %}
+
+{% block pageContent %}
+
+    <h1 class="govuk-heading-l">
+
+        {{pageHeading}}
+
+    </h1>
+
+    <p class="govuk-!-margin-bottom-6">The changes to the early years foundation stage (EYFS) framework include a number of updates to ways of working for early years practitioners.</p>
+
+
+<p class="govuk-body">Four guiding principles should shape practice in early years settings. These are:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li>every child is a unique child, who is constantly learning and can be resilient, capable, confident and self-assured</li>
+
+<li>children learn to be strong and independent through positive relationships</li>
+
+<li>children learn and develop well in enabling environments with teaching and support from adults, who respond to their individual interests and needs and help them to build their learning over time. Children benefit from a strong partnership between practitioners and parents and/or carers.</li>
+
+<li>importance of learning and development. Children develop and learn at different rates. The framework covers the education and care of all children in early years provision, including children with special educational needs and disabilities (SEND).</li>
+</ul>
+
+    <h2 class="govuk-heading-m">In this section you will find guidance about:</h2>
+
+    <ul class="govuk-list govuk-body govuk-!-margin-bottom-6">
+        <li>
+            <a class="govuk-link" href="../get-help-to-improve-your-practice/planning">Planning</a>
+        </li>
+        <li>
+            <a class="govuk-link" href="../get-help-to-improve-your-practice/reducing-paperwork">Reducing paperwork</a>
+        </li>
+        <li>
+            <a class="govuk-link" href="../get-help-to-improve-your-practice/send">Identifying and supporting children with special educational needs and disability (SEND)</a>
+        </li>
+        <li>
+            <a class="govuk-link" href="../get-help-to-improve-your-practice/oral-health">Oral health</a>
+        </li>
+         <li>
+            <a class="govuk-link" href="../get-help-to-improve-your-practice/working-with-parents">Working in partnership with parents</a>
+        </li>
+    </ul>
+
+
+
+
+<!--     {{ appPagination ({
+        items: [{
+            prevHref: '../literacy/writing',
+            prevLabel: 'Writing',
+            nextHref: '../maths/numbers-in-context',
+            nextLabel: 'Numbers in context'
+        }]
+    }) }} -->
+
+{% endblock %}
