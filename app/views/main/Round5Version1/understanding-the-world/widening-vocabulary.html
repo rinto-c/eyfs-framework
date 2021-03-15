@@ -1,0 +1,123 @@
+{% extends "../version_templates/two-column-with-subnav.html" %}
+
+{% set activePage = 'widening-vocabulary' %}
+{% set activeSection = 'understanding-the-world-index' %}
+
+{% set sectionHeading = 'Understanding the world' %}
+{% set pageHeading = "Widening vocabulary" %}
+
+{% block pageContent %}
+
+    <span class="govuk-caption-l">
+        {{sectionHeading}}
+    </span>
+        
+    <h1 class="govuk-heading-l">
+
+        {{pageHeading}}
+
+    </h1>
+
+    <p>Learn more about widening vocabulary in understanding the world by exploring this page of resources.</p>
+
+    <h2 class="govuk-heading-m">
+        Why widening vocabulary is important
+    </h2>
+
+    <p>Being able to understand a wide range of words is important for children’s development.</p>
+
+    <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+        <li>
+            improving language and literacy skills early in life helps children be more successful academically and socially
+        </li>
+        <li>
+            research has shown that children need to understand
+        </li>
+    </ul>
+
+    {# Example of how to use numbered steps similar to govspeak #}
+    {# <ol class="steps govuk-list">
+        <li>
+            You could use this style for steps.
+        </li>
+        <li>
+            You must use full sentences in each step.
+        </li>
+        <li>
+            You must use a full stop too.
+        </li>
+    </ol> #}
+
+    <p>In this video, an expert in early years communication explains what’s changed in the new EYFS for widening vocabulary and offers some top tips on getting the most out of a child in this area.</p>
+
+    <h2 class="govuk-heading-m">
+        What the EYFS framework says
+    </h2>
+
+    <p>Children should listen to a broad selection of stories, non-fiction, rhymes and poems. As well as building important knowledge, this extends their familiarity with words that support understanding across domains. Enriching and widening children’s vocabulary will support later reading comprehension.</p>
+
+    <h2 class="govuk-heading-m">
+        What this means in practice
+    </h2>
+
+    <p>One of the key methods children use to learn is trial and error; therefore, using a hands-on approach, and allowing them to experiment, is a good way for children to develop their mathematical thinking skills.</p>
+
+    <p>Here we’ve suggested just a few examples of the toys and activities you can provide to encourage development in some of the areas of numeracy, for early years.</p>
+
+    <h2 class="govuk-heading-m">
+        Widening vocabulary activities
+    </h2>
+
+    <p><a href="#" class="govuk-link">Download activity worksheet </a>(PDF, 19.5 KB, 1 page)</p>
+
+    <h2 class="govuk-heading-m">
+        How widening vocabulary is linked to other areas of the EYFS
+    </h2>
+
+    <p>If leaders, staff and parents can help to equip young children with a ‘can do’ attitude around maths, giving them the confidence to try things out and discover new skills in the same way they do for other areas of learning, we will have made a massive step in the right direction.</p>
+
+    <h2 class="govuk-heading-m">
+        What other nurseries and childminders are doing
+    </h2>
+
+    <p>Caroline is Deputy Manager at a nursery in East Midlands.</p>
+
+    <p>Caroline adapted the provision and made space for the new counting collections to be put into place within the pre-school area. She introduced one counting collection to a small group of children through an adult-led activity each week for a period of six weeks then adapted it to one counting collection per child following the child’s lead and closely worked with the children with this encouraging different ways of sorting
+    and organising the collections they were counting.
+    </p>
+
+    <p>The children are now offered a counting collection in a different area of pre-school each week and this is added onto the weekly planning, the children choose an individual collection and decide what the objects will be counted into (cups, bowls, frames, bags) and how they will record the amount, this has had a positive impact and increased the social working between the children and a great way to group items to get an altogether total and increase the child’s unitary counting.
+    </p>
+
+    <div class="call-to-action">
+        <h3 class="govuk-heading-m">Check your understanding</h3>
+        <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+            <li>
+                Research confirms that early experiences have long-lasting outcomes in terms of educational achievement and life chances
+            </li>
+            <li>
+                You can make a real difference to ensure every child has a chance to become a confident learner and user of mathematics
+            </li>
+            <li>
+                Be positive about maths. Don't say things like “I can’t do maths” or “I hated maths at school”
+            </li>
+            <li>
+                Point out the maths in everyday life. Include children in activities involving maths such as using money, cooking, travelling or finding the correct house number
+            </li>
+            <li>
+                Praise children for effort rather than talent. This shows them that by working hard they can always improve
+            </li>
+        </ul>
+    </div>
+
+
+    {{ appPagination ({
+        items: [{
+            prevHref: '../understanding-the-world/diverse-world',
+            prevLabel: 'Diverse world',
+            nextHref: '../expressive-arts-and-design/expressive-arts-and-design-index',
+            nextLabel: 'Expressive arts and design'
+        }]
+    }) }}
+
+{% endblock %}

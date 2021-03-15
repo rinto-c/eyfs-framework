@@ -1,0 +1,67 @@
+{% extends "../version_templates/two-column-with-subnav.html" %}
+
+
+{% set activePage = 'literacy-index' %}
+{% set activeSection = 'literacy-index' %}
+{% set pageType = 'parent' %}
+
+{% set pageHeading = "Literacy" %}
+
+{% block pageContent %}
+
+    <h1 class="govuk-heading-l">
+
+        {{pageHeading}}
+
+    </h1>
+
+
+        <p class="govuk-!-margin-bottom-6">Access resources, activity ideas and advice for teaching literacy skills to early years children.</p>
+
+        <h2 class="govuk-heading-m">Early years literacy resources</h2>
+
+        <ul class="govuk-list govuk-body govuk-!-margin-bottom-6">
+            <li>
+                <a class="govuk-link" href="../literacy/comprehension">Comprehension</a>
+            </li>
+            <li>
+                <a class="govuk-link" href="../literacy/word-reading">Word reading</a>
+            </li>
+            <li>
+                <a class="govuk-link" href="../literacy/writing">Writing</a>
+            </li>
+        </ul>
+
+        <h2 class="govuk-heading-m">What the early years foundation stage (EYFS) framework says about literacy</h2>
+
+        <p class="govuk-body">
+            It is crucial for children to develop a life-long love of reading. Reading consists of two dimensions: language comprehension and word reading. </p>
+
+              <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                 Read more
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              <p>Language comprehension (necessary for both reading and writing) starts from birth.</p>
+              <p>It only develops when adults talk with children about the world around them and the books (stories and non-fiction) they read with them, and enjoy rhymes, poems and songs together.</p>
+              <p>Skilled word reading, taught later, involves both the speedy working out of the pronunciation of unfamiliar printed words (decoding) and the speedy recognition of familiar printed words.</p>
+              <p>Writing involves transcription (spelling and handwriting) and composition (articulating ideas and structuring them in speech, before writing).</p>
+            </div>
+          </details>
+
+
+
+
+
+        {{ appPagination ({
+            items: [{
+                prevHref: '../personal-social-and-emotional-development/relationships',
+                prevLabel: 'Relationships',
+                nextHref: '../literacy/comprehension',
+                nextLabel: 'Comprehension'
+            }]
+        }) }}
+
+    {% endblock %}
