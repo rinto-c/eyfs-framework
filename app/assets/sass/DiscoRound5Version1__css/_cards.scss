@@ -45,5 +45,8 @@ $card-border-color: #1d70b8;
 .eyfs-card__content--stacked {
   @include govuk-responsive-padding(5);
   position: relative;
+}
 
+.eyfs-card-background--light-grey {
+  background: govuk-colour("light-grey");
 }
