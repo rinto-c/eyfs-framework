@@ -1,0 +1,202 @@
+{% extends "main/DiscoRound5Version1/layout.html" %}
+{% set pageHeading = "EYFS help centre" %}
+
+
+{% block pageTitle %}
+  Help for early years providers
+{% endblock %}
+
+{% block content %}
+  <!--Until we find a fix for the cards not accepting click function without including this menu, we have to use it in the DOM and call it display none with the govuk class -->
+  <div id="eyfs-sticky-nav__mobile" class="eyfs-sticky-nav eyfs-sticky-nav--clickable govuk-!-display-none">
+    <button id="eyfs-sticky-nav-toggler" class="govuk-button eyfs-sticky-nav__button eyfs-sticky-nav__link eyfs-sticky-nav-toggler js-eyfs-sticky-nav-toggler" aria-controls="app-mobile-nav">
+        EYFS Resources
+    </button>
+    {% include "main/DiscoRound5Version1/version_includes/subnav-mobile.html" %}
+  </div>
+  <!--End of-->
+  <div class="govuk-width-container">
+    {{ govukBreadcrumbs({
+          collapseOnMobile: false,
+          items: [
+            {
+              text: "Home",
+              href: "/main/DiscoRound5Version1/hub"
+            },
+            {
+              text: "All articles",
+              href: "/main/DiscoRound5Version1/all-articles"
+            },
+            {
+              text: pageHeading or "default text",
+              href: activePage
+            }
+          ]
+    }) }}
+  </div>
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-width-container">
+
+      <!--Top section-->
+      <div class="govuk-grid-row govuk-!-margin-bottom-7">
+        <div class="govuk-grid-column-full">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
+                Article heading blah blah blah blah blah blah blah
+              </h1>
+              <p class="govuk-body-l">
+                Leading paragraph
+              </p>
+            </div>
+          </div>
+          <hr class="govuk-section-break govuk-section-break--visible">
+        </div>
+      </div>
+    </div>
+
+    <div class="govuk-width-container govuk-!-margin-bottom-9">
+      <!--Heading section-->
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+
+          <p class="govuk-body govuk-!-font-size-14 govuk-!-margin-bottom-1 pstyling">Published 
+            <time datetime="2021-03-05T10:29:30Z" title="2021-03-05 10:29" data-datetime="calendar">
+            05 March 2021 10:29</time>
+          </p>        
+          <p class="govuk-body govuk-!-font-size-14 govuk-!-margin-bottom-1 pstyling">Last updated 
+            <time datetime="2021-03-08T13:50:16Z" title="2021-03-08 13:50" data-datetime="calendar">
+            08 March 2021 13:50</time>
+          </p>
+          <p class="govuk-body govuk-!-font-size-14 govuk-!-margin-bottom-6 pstyling">From: 
+            <a class="govuk-link govuk-link--no-visited-state govuk-!-font-weight-bold" href="https://www.gov.uk/government/organisations/department-for-education">Department for education</a>
+          </p> 
+
+          <hr class="govuk-section-break govuk-section-break--visible">
+        </div>
+      </div>
+
+      <!--List with filters-->
+      <div class="govuk-grid-row govuk-!-padding-top-6 govuk-!-padding-bottom-9">
+
+        <!--Filter area-->
+        <div class="govuk-grid-column-one-quarter">
+
+          <div class="govuk-form-group">
+
+            <fieldset class="govuk-fieldset govuk-!-padding-bottom-6">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m govuk-!-margin-bottom-2">
+                <h4 class="govuk-fieldset__heading govuk-!-font-size-19">Filter by:</h4>
+              </legend>
+              
+              <div class="govuk-checkboxes govuk-checkboxes--small">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input govuk-!-padding-bottom-2 govuk-!-padding-top-2" id="360003962039checkbox" name="360003962039checkbox" type="checkbox" value="Academies" checked="">
+                  <label class="govuk-label govuk-checkboxes__label govuk-!-padding-bottom-2 govuk-!-padding-top-2" for="360003962039checkbox">Nursery manager</label>
+                </div>
+              </div>
+              
+              <div class="govuk-checkboxes govuk-checkboxes--small">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input govuk-!-padding-bottom-2 govuk-!-padding-top-2" id="360005165200checkbox" name="360005165200checkbox" type="checkbox" value="Maintained schools" checked="">
+                  <label class="govuk-label govuk-checkboxes__label govuk-!-padding-bottom-2 govuk-!-padding-top-2" for="360005165200checkbox">Nursery practitioner</label>
+                </div>
+              </div>
+              
+              <div class="govuk-checkboxes govuk-checkboxes--small">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input govuk-!-padding-bottom-2 govuk-!-padding-top-2" id="360005165220checkbox" name="360005165220checkbox" type="checkbox" value="Local authorities" checked="">
+                  <label class="govuk-label govuk-checkboxes__label govuk-!-padding-bottom-2 govuk-!-padding-top-2" for="360005165220checkbox">Local authorities</label>
+                </div>
+              </div>
+              
+              <div class="govuk-checkboxes govuk-checkboxes--small">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input govuk-!-padding-bottom-2 govuk-!-padding-top-2" id="360004444200checkbox" name="360004444200checkbox" type="checkbox" value="Further education and training providers" checked="">
+                  <label class="govuk-label govuk-checkboxes__label govuk-!-padding-bottom-2 govuk-!-padding-top-2" for="360004444200checkbox">Childminders</label>
+                </div>
+              </div>
+            </fieldset>
+
+          </div>
+
+        </div>
+
+        <!--List of articles-->
+        <div class="govuk-grid-column-three-quarters">
+
+          <!--Main list area-->
+          <div class="govuk-!-margin-bottom-2">
+            <!--List 1-->
+            <div class="govuk-!-margin-bottom-4">
+              <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold" href="#">
+                Link to the article
+              </a>
+              <span class="govuk-caption-m govuk-!-font-size-16 govuk-!-margin-top-1">Last updated 8 March 2021</span>
+              <p class="govuk-body govuk-!-margin-top-2 govuk-!-margin-bottom-2">
+                Get Information about EYFS and the above link article
+              </p>
+              <hr class="govuk-section-break govuk-section-break--visible">
+            </div>
+
+            <!--List 2-->
+            <div class="govuk-!-margin-bottom-4">
+              <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold" href="#">
+                Link to the article
+              </a>
+              <span class="govuk-caption-m govuk-!-font-size-16 govuk-!-margin-top-1">Last updated 8 March 2021</span>
+              <p class="govuk-body govuk-!-margin-top-2 govuk-!-margin-bottom-2">
+                Get Information about EYFS and the above link article
+              </p>
+              <hr class="govuk-section-break govuk-section-break--visible">
+            </div>
+
+            <!--List 3-->
+            <div class="govuk-!-margin-bottom-4">
+              <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold" href="#">
+                Link to the article
+              </a>
+              <span class="govuk-caption-m govuk-!-font-size-16 govuk-!-margin-top-1">Last updated 8 March 2021</span>
+              <p class="govuk-body govuk-!-margin-top-2 govuk-!-margin-bottom-2">
+                Get Information about EYFS and the above link article
+              </p>
+              <hr class="govuk-section-break govuk-section-break--visible">
+            </div>
+
+            <!--List 4-->
+            <div class="govuk-!-margin-bottom-4">
+              <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold" href="#">
+                Link to the article
+              </a>
+              <span class="govuk-caption-m govuk-!-font-size-16 govuk-!-margin-top-1">Last updated 8 March 2021</span>
+              <p class="govuk-body govuk-!-margin-top-2 govuk-!-margin-bottom-2">
+                Get Information about EYFS and the above link article
+              </p>
+              <hr class="govuk-section-break govuk-section-break--visible">
+            </div>
+
+            <!--List 5-->
+            <div class="govuk-!-margin-bottom-4">
+              <a class="govuk-link govuk-!-font-size-19 govuk-!-font-weight-bold" href="#">
+                Link to the article
+              </a>
+              <span class="govuk-caption-m govuk-!-font-size-16 govuk-!-margin-top-1">Last updated 8 March 2021</span>
+              <p class="govuk-body govuk-!-margin-top-2 govuk-!-margin-bottom-2">
+                Get Information about EYFS and the above link article
+              </p>
+              <hr class="govuk-section-break govuk-section-break--visible">
+            </div>
+
+          </div>
+        
+        </div>
+      </div>
+      <hr class="govuk-section-break govuk-section-break--visible">
+    </div>
+
+    {% include "main/DiscoRound5Version1/version_includes/other-ways-to-get-help.html" %}
+    
+  </main>
+{% endblock %}
