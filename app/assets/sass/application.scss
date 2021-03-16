@@ -43,8 +43,11 @@ $app-light-grey: #f8f8f8;
 @import "Round4Version1__css/landing-page";
 // @import "Round4Version1__css/subnav";
 
-// Styles for DiscoRound5Version1 for Beta Sprint 4
+// Styles for DiscoRound5Version1 for Beta Sprint 5
 @import "DiscoRound5Version1__css/cards";
+
+// Styles for Round5Version1 for Beta Sprint 5
+@import "Round5Version1__css/cards";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 // added the CSS for the pagination at the bottom of the stepped guide - do not exist yet in the govuk-design-system - the code commented would restore the previous on the left anf next on the right 

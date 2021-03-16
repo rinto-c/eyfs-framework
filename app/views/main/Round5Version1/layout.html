@@ -48,21 +48,16 @@
   
   {% include "main/Round5Version1/version_includes/eyfs-header.html" %}
 
-  {# We are taking the navigation outside of the header to put it below the phase banner #}
-  {# {% include "./version_includes/nav-bar--mobile.html" %} #}
+  {% include "main/Round5Version1/version_includes/subnav-mobile.html" %}
 
 {% endblock %}
 
 {% block main %}
 
-  {% block content %}
-
-  {%  endblock %}
-
   {% block feedbackBanner %}
 
-    <div class="govuk-width-container govuk-!-margin-bottom-1">
-      <div class="govuk-phase-banner eyfs-phase-banner--border-top">
+    <div class="govuk-width-container">
+      <div class="govuk-phase-banner">
         <p class="govuk-phase-banner__content">
         <strong class="govuk-tag govuk-phase-banner__content__tag">
           prototype
@@ -73,6 +68,10 @@
         </p>
       </div>
     </div>
+
+  {%  endblock %}
+
+  {% block content %}
 
   {%  endblock %}
 
