@@ -8,13 +8,13 @@
 
 {% block content %}
   <!--Until we find a fix for the cards not accepting click function without including this menu, we have to use it in the DOM and call it display none with the govuk class -->
-  <div id="eyfs-sticky-nav__mobile" class="eyfs-sticky-nav eyfs-sticky-nav--clickable govuk-!-display-none">
+  {# <div id="eyfs-sticky-nav__mobile" class="eyfs-sticky-nav eyfs-sticky-nav--clickable govuk-!-display-none">
     <button id="eyfs-sticky-nav-toggler" class="govuk-button eyfs-sticky-nav__button eyfs-sticky-nav__link eyfs-sticky-nav-toggler js-eyfs-sticky-nav-toggler" aria-controls="app-mobile-nav">
         EYFS Resources
     </button>
     {% include "main/DiscoRound5Version1/version_includes/subnav-mobile.html" %}
   </div>
-  <!--End of-->
+  <!--End of--> #}
   <div class="govuk-width-container">
     {{ govukBreadcrumbs({
           collapseOnMobile: false,

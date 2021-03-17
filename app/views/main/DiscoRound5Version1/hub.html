@@ -30,21 +30,18 @@
     <!--Cards section-->
     <div class="eyfs-areas-of-learning__section">
       <div class="govuk-width-container">
-        {# We align the content that might span across the full width of the container into two-thirds for readability purposes. Same principle as the section 'Get help to improve your practice' #}
         <div class="govuk-grid-row">
           <div class="govuk-grid-column-two-thirds">
             <h2 class="govuk-heading-l">Support</h2>
           </div>
         </div>
 
-        {# The cards section can span across the full width since it is then further breaking down into one half #}
         <ul class="govuk-grid-row eyfs-card-group">
           <li class="govuk-grid-column-one-third eyfs-card-group__item">
             <div class="eyfs-card--static">
-              {# Inline svg element as opposed to using the chevron icon as a css background for the card. If css fails, users will still be able to see the icon. Helps distribute the space around the card evenly (padding 25px applied on all sides)#}
               <div class="eyfs-card__content--stacked">
                 <h3 class="govuk-heading-m">
-                  <a class="govuk-link govuk-link--no-visited-state"href="../DiscoRound5Version1/all-articles.html">
+                  <a class="govuk-link"href="../DiscoRound5Version1/all-articles.html">
                     Read our help articles
                   </a>
                 </h3>
@@ -64,7 +61,7 @@
                 <p>
                   Discuss topics on further education and skills with other providers.
                 </p>
-                <ul class="govuk-list">
+                <ul class="govuk-list govuk-list--spaced govuk-!-font-size-16">
                   <li>
                     <a class="govuk-link" href="#">
                       Further education and training providers
