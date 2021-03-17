@@ -1,0 +1,180 @@
+{% extends "main/DiscoRound5Version1/layout.html" %}
+{% set pageHeading = "All posts" %}
+
+
+{% block pageTitle %}
+  Help for early years providers
+{% endblock %}
+
+{% block content %}
+  <!--Until we find a fix for the cards not accepting click function without including this menu, we have to use it in the DOM and call it display none with the govuk class -->
+  {# <div id="eyfs-sticky-nav__mobile" class="eyfs-sticky-nav eyfs-sticky-nav--clickable govuk-!-display-none">
+    <button id="eyfs-sticky-nav-toggler" class="govuk-button eyfs-sticky-nav__button eyfs-sticky-nav__link eyfs-sticky-nav-toggler js-eyfs-sticky-nav-toggler" aria-controls="app-mobile-nav">
+        EYFS Resources
+    </button>
+    {% include "main/DiscoRound5Version1/version_includes/subnav-mobile.html" %}
+  </div>
+  <!--End of--> #}
+  <div class="govuk-width-container">
+    {{ govukBreadcrumbs({
+          collapseOnMobile: false,
+          items: [
+            {
+              text: "Home",
+              href: "/main/DiscoRound5Version1/hub"
+            },
+            {
+              text: pageHeading or "default text",
+              href: activePage
+            }
+          ]
+    }) }}
+  </div>
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-width-container">
+
+      <!--Top section-->
+      <div class="govuk-grid-row govuk-!-margin-bottom-7">
+        <div class="govuk-grid-column-two-thirds">
+          <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
+            EYFS community
+          </h1>
+          <p class="govuk-body-l">
+            Disclaimer for the posts can go here.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="govuk-width-container govuk-!-margin-bottom-6">
+      <!--Heading section-->
+      <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-two-thirds">
+          <h2 class="govuk-heading-l govuk-!-margin-bottom-1">All posts</h2>
+          <span class="govuk-caption-l govuk-!-margin-top-0 govuk-!-padding-bottom-2">Showing page 1 of 1</span>
+        </div>
+
+        <div class="govuk-grid-column-one-third">
+            {{ govukButton({
+              text: "Sign in to create a post",
+              classes: "eyfs-float-right"
+            }) }}
+        </div>
+
+        <div class="govuk-grid-column-full">
+          <hr class="govuk-section-break govuk-section-break--visible">
+        </div>
+
+      </div>
+
+      <!--List with filters-->
+      <div class="govuk-grid-row govuk-!-padding-top-6 govuk-!-padding-bottom-9">
+
+        <!--List of posts-->
+        <div class="govuk-grid-column-full">
+
+          <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header govuk-!-width-one-half">Posts(most recent activity)</th>
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Created</th>
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Replies</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+
+            <!--post link 1-->
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                <a class="eyfs-font-weight--regular govuk-link" href="#">
+                  Training for users new to data collections
+                </a>
+                <span class="govuk-tag govuk-tag--blue govuk-!-font-size-14 govuk-!-margin-top-2 govuk-!-display-block eyfs-block-width">Pinned</span>
+              </th>
+              <td class="govuk-table__cell">Monday at 11:30</td>
+              <td class="govuk-table__cell">0</td>
+            </tr>
+
+            <!--post link 2-->
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                <a class="eyfs-font-weight--regular govuk-link" href="#">
+                  Training for users new to data collections
+                </a>
+                <span class="govuk-tag govuk-tag--blue govuk-!-font-size-14 govuk-!-margin-top-2 govuk-!-display-block eyfs-block-width">Pinned</span>
+              </th>
+              <td class="govuk-table__cell">Monday at 11:30</td>
+              <td class="govuk-table__cell">0</td>
+            </tr>
+
+            <!--post link 3-->
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                <a class="eyfs-font-weight--regular govuk-link" href="#">
+                  Training for users new to data collections
+                </a>
+                <span class="govuk-tag govuk-tag--blue govuk-!-font-size-14 govuk-!-margin-top-2 govuk-!-display-block eyfs-block-width">Pinned</span>
+              </th>
+              <td class="govuk-table__cell">Monday at 11:30</td>
+              <td class="govuk-table__cell">0</td>
+            </tr>
+
+            <!--post link 4-->
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                <a class="eyfs-font-weight--regular govuk-link" href="#">
+                  Training for users new to data collections
+                </a>
+              </th>
+              <td class="govuk-table__cell">Monday at 11:30</td>
+              <td class="govuk-table__cell">0</td>
+            </tr>
+
+            <!--post link 5-->
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                <a class="eyfs-font-weight--regular govuk-link" href="#">
+                  Training for users new to data collections
+                </a>
+              </th>
+              <td class="govuk-table__cell">Monday at 11:30</td>
+              <td class="govuk-table__cell">0</td>
+            </tr>
+
+            <!--post link 6-->
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                <a class="eyfs-font-weight--regular govuk-link" href="#">
+                  Training for users new to data collections
+                </a>
+              </th>
+              <td class="govuk-table__cell">Monday at 11:30</td>
+              <td class="govuk-table__cell">0</td>
+            </tr>
+
+            <!--post link 7-->
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                <a class="eyfs-font-weight--regular govuk-link" href="#">
+                  Training for users new to data collections
+                </a>
+              </th>
+              <td class="govuk-table__cell">Monday at 11:30</td>
+              <td class="govuk-table__cell">0</td>
+            </tr>
+
+          </tbody>
+        </table>
+        
+        </div>
+      </div>
+      <hr class="govuk-section-break govuk-section-break--visible">
+    </div>
+
+    {% include "main/DiscoRound5Version1/version_includes/other-ways-to-get-help.html" %}
+    
+  </main>
+{% endblock %}
