@@ -1,12 +1,12 @@
 <nav class="app-subnav--mobile app-mobile-nav js-app-mobile-nav">
   <ul class="app-mobile-nav__list">
     <li>
-      <div class="app-mobile-nav-subnav-toggler topic-one">
-        <a class="govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler" href="javascript:void(0);">Communication and language</a>
-      </div>
-      <ul class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'communication-and-language-index' }} app-mobile-nav__list app-mobile-nav__subnav app-mobile-nav__subnav--topic-one js-app-mobile-nav-subnav">
+      <a class="app-mobile-nav-subnav-toggler govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler" aria-controls="eyfs-subnav-1" href="#">
+        Communication and language
+      </a>
+      <ul id="eyfs-subnav-1" class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'communication-and-language-index' }} app-mobile-nav__list app-mobile-nav__subnav app-mobile-nav__subnav--topic-one js-app-mobile-nav-subnav">
         <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'communication-and-language-index' }} app-mobile-nav__subnav-item">
-          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/communication-and-language/communication-and-language-index">Overview</a>
+          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" {% if activePage == 'communication-and-language-index' %} aria-current="page" {% endif %} href="/main/Round5Version1/communication-and-language/communication-and-language-index">Overview</a>
         </li>
         <li>
           <ul class="app-mobile-nav__list">
