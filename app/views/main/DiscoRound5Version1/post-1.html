@@ -1,0 +1,112 @@
+{% extends "main/DiscoRound5Version1/layout.html" %}
+{% set pageHeading = "Post 1" %}
+
+
+{% block pageTitle %}
+  Help for early years providers
+{% endblock %}
+
+{% block content %}
+  <!--Until we find a fix for the cards not accepting click function without including this menu, we have to use it in the DOM and call it display none with the govuk class -->
+  <div id="eyfs-sticky-nav__mobile" class="eyfs-sticky-nav eyfs-sticky-nav--clickable govuk-!-display-none">
+    <button id="eyfs-sticky-nav-toggler" class="govuk-button eyfs-sticky-nav__button eyfs-sticky-nav__link eyfs-sticky-nav-toggler js-eyfs-sticky-nav-toggler" aria-controls="app-mobile-nav">
+        EYFS Resources
+    </button>
+    {% include "main/DiscoRound5Version1/version_includes/subnav-mobile.html" %}
+  </div>
+  <!--End of-->
+  <div class="govuk-width-container">
+    {{ govukBreadcrumbs({
+          collapseOnMobile: false,
+          items: [
+            {
+              text: "Home",
+              href: "/main/DiscoRound5Version1/hub"
+            },
+            {
+              text: "All posts",
+              href: "/main/DiscoRound5Version1/all-articles"
+            },
+            {
+              text: pageHeading or "default text",
+              href: activePage
+            }
+          ]
+    }) }}
+  </div>
+
+  <main class="govuk-main-wrapper">
+
+    <!--Top section-->
+    <div class="govuk-width-container">
+      <div class="govuk-grid-row govuk-!-margin-top-5">
+
+        <div class="govuk-grid-column-one-quarter">
+          <p>Add the icon</p>
+        </div>
+
+        <div class="govuk-grid-column-three-quarters govuk-!-margin-bottom-9">
+          <div class="govuk-!-margin-bottom-9">
+            <h1 class="govuk-heading-xl govuk-!-margin-bottom-5">
+              Training for users new to data collections
+            </h1>
+            <p class="govuk-!-font-size-16 govuk-!-margin-bottom-5">Edited 3 days ago</p>
+            <span class="govuk-tag govuk-tag--blue govuk-!-font-size-14 govuk-!-margin-top-2 govuk-!-display-block eyfs-block-width">Pinned</span>
+          </div>
+          <p>
+            For providers that are new to the ESFA, the data collections team will demonstrate how to validate Individualised Learner Record (ILR) files through the Funding Information Service (FIS) and then show how to return data through Submit learner data (SLD).
+          </p>
+          <p>
+            You will also have an opportunity to ask questions.
+          </p>
+          <p>
+            The demo will take place using MS teams on 18 March at 1pm to 2pm.
+          </p>
+          <p>
+            Please contact
+            <a class="govuk-link eyfs-word-break" href="mailto:help_for_early_years_providers@digital.education.gov.uk">
+              help_for_early_years_providers@digital.education.gov.uk
+            </a>
+            if you would like to attend.
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-full govuk-!-margin-bottom-4">
+          <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+          <h2 class="govuk-heading-m">Replies</p>
+          <hr class="govuk-section-break govuk-section-break--visible">
+        </div>
+
+        <!--Comment 1-->
+        <div class="govuk-grid-column-one-quarter">
+          <p>Add the icon</p>
+        </div>
+
+        <div class="govuk-grid-column-three-quarters">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-5">
+            Paul Taylor
+          </h3>
+          <p>
+            This is a welcome update. It would be useful if the Agency continued to monitor this though as we may need this flexibility beyond April 21. The flexibility acknowledges the difficulties of bedding this in. However, March and April are not peak recruitment months - April has 2 months of Easter in - and from April all starts will need to go through the Apps Service with funds reserved for non-levy payers so the volume will ramp up from April onwards and most significantly in early Autumn 21
+          </p>
+          <div class="govuk-!-margin-top-5">
+            <p class="govuk-!-font-size-16">22 days ago</p>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-full govuk-!-margin-top-4 govuk-!-margin-bottom-4">
+          <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+        </div>
+
+        <div class="govuk-grid-column-full">
+          <h2 class="govuk-heading-m">Post a reply</p>
+          {{ govukButton({
+              text: "Sign in to create a post"
+            }) }}
+        </div>
+
+      </div>
+    </div>
+    
+  </main>
+{% endblock %}
