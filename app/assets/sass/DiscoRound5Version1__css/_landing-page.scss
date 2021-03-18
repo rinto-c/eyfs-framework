@@ -305,3 +305,10 @@
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
+
+.eyfs-community-post__avatar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
