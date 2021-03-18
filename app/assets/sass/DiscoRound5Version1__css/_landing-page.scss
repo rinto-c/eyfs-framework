@@ -297,14 +297,11 @@
   float: right;
 }
 
-.eyfs-font-weight--regular {
-  font-weight: 400 !important;
-}
-
 .eyfs-block-width {
   width: fit-content;
 }
 
 .eyfs-word-break {
-  word-break: break-all;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
