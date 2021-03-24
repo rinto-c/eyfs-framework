@@ -320,4 +320,16 @@
     overflow-x:hidden;
     border-right:0
    }
+
+.app-subnav--mobile {
+  display: block;
+}
+  
+.js-enabled .app-subnav--mobile {
+  display: none;
+}
+
+.js-enabled .app-mobile-nav--active.app-subnav--mobile {
+  display: block;
+}
   

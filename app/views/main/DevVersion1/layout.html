@@ -16,6 +16,7 @@
 {% from "govuk/components/error-summary/macro.njk"       import govukErrorSummary %}
 {% from "govuk/components/fieldset/macro.njk"            import govukFieldset %}
 {% from "govuk/components/file-upload/macro.njk"         import govukFileUpload %}
+{% from "govuk/components/header/macro.njk"              import govukHeader %}
 {% from "govuk/components/input/macro.njk"               import govukInput %}
 {% from "govuk/components/inset-text/macro.njk"          import govukInsetText %}
 {% from "govuk/components/notification-banner/macro.njk" import govukNotificationBanner %}
@@ -46,9 +47,9 @@
 {% block header %}
   {% include "includes/cookie-banner.html" %}
   
-  {% include "includes/eyfs-header.html" %}
+  {% include "main/DevVersion1/version_includes/eyfs-header.html" %}
 
-  {% include "./version_includes/subnav-mobile.html" %}
+  {% include "main/DevVersion1/version_includes/subnav-mobile.html" %}
 
 {% endblock %}
 
