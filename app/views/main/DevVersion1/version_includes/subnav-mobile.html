@@ -1,23 +1,30 @@
-<nav class="app-subnav--mobile app-mobile-nav js-app-mobile-nav">
-  <ul class="app-mobile-nav__list">
+<nav id="navigation" class="app-subnav--mobile app-mobile-nav js-app-mobile-nav">
+
+  <ul class="app-mobile-nav__list" aria-label="Navigation menu">
+
     <li>
-      <div class="app-mobile-nav-subnav-toggler topic-one">
-        <a class="govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler" href="javascript:void(0);">Communication and language</a>
+      <div class="app-mobile-nav-subnav-toggler">
+        <a class="govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler" aria-controls="eyfs-subnav-1" href="/main/DevVersion1/communication-and-language/communication-and-language-index">
+          Communication and language
+        </a>
       </div>
-      <ul class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'communication-and-language-index' }} app-mobile-nav__list app-mobile-nav__subnav app-mobile-nav__subnav--topic-one js-app-mobile-nav-subnav">
+
+      <ul id="eyfs-subnav-1" class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'communication-and-language-index' }} app-mobile-nav__list app-mobile-nav__subnav app-mobile-nav__subnav--topic-one js-app-mobile-nav-subnav">
+
         <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'communication-and-language-index' }} app-mobile-nav__subnav-item">
-          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/communication-and-language/communication-and-language-index">Overview</a>
+          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" {% if activePage == 'communication-and-language-index' %} aria-current="page" {% endif %} href="/main/DevVersion1/communication-and-language/communication-and-language-index">Overview</a>
         </li>
+
         <li>
           <ul class="app-mobile-nav__list">
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'interactions' }} app-mobile-nav__subnav-item">
-              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/communication-and-language/interactions">Interactions</a>
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/communication-and-language/interactions">Interactions</a>
             </li>
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'exploring-language' }} app-mobile-nav__subnav-item">
-              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/communication-and-language/exploring-language">Exploring language</a>
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/communication-and-language/exploring-language">Exploring language</a>
             </li>
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'listening-and-understanding' }} app-mobile-nav__subnav-item">
-              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/communication-and-language/listening-and-understanding">Listening and understanding</a>
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/communication-and-language/listening-and-understanding">Listening and understanding</a>
             </li>
           </ul>
         </li>
@@ -25,23 +32,25 @@
     </li>
 
     <li>
+
       <div class="app-mobile-nav-subnav-toggler topic-two">
         <a class="govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler" href="javascript:void(0);">Physical development</a>
       </div>
+
       <ul class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'physical-development-index' }} app-mobile-nav__list app-mobile-nav__subnav app-mobile-nav__subnav--topic-two js-app-mobile-nav-subnav">
         <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'physical-development-index' }} app-mobile-nav__subnav-item">
-          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/physical-development/physical-development-index">Overview</a>
+          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/physical-development/physical-development-index">Overview</a>
         </li>
         <li>
           <ul class="app-mobile-nav__list">
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'core-strength-and-coordination' }} app-mobile-nav__subnav-item">
-              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/physical-development/core-strength-and-coordination">Core strength and co-ordination</a>
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/physical-development/core-strength-and-coordination">Core strength and co-ordination</a>
             </li>
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'gross-motor-skills' }} app-mobile-nav__subnav-item">
-              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/physical-development/gross-motor-skills">Gross motor skills</a>
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/physical-development/gross-motor-skills">Gross motor skills</a>
             </li>
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'fine-motor-skills' }} app-mobile-nav__subnav-item">
-              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/physical-development/fine-motor-skills">Fine motor skills</a>
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/physical-development/fine-motor-skills">Fine motor skills</a>
             </li>
           </ul>
         </li>
@@ -54,18 +63,18 @@
       </div>
       <ul class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'personal-social-and-emotional-development-index' }} app-mobile-nav__list app-mobile-nav__subnav app-mobile-nav__subnav--topic-three js-app-mobile-nav-subnav">
         <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'personal-social-and-emotional-development-index' }} app-mobile-nav__subnav-item">
-          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/personal-social-and-emotional-development/personal-social-and-emotional-development-index">Overview</a>
+          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/personal-social-and-emotional-development/personal-social-and-emotional-development-index">Overview</a>
         </li>
         <li>
           <ul class="app-mobile-nav__list">
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'emotions' }} app-mobile-nav__subnav-item">
-              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/personal-social-and-emotional-development/emotions">Emotions</a>
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/personal-social-and-emotional-development/emotions">Emotions</a>
             </li>
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'sense-of-self' }} app-mobile-nav__subnav-item">
-              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/personal-social-and-emotional-development/sense-of-self">Sense of self</a>
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/personal-social-and-emotional-development/sense-of-self">Sense of self</a>
             </li>
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'relationships' }} app-mobile-nav__subnav-item">
-              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/personal-social-and-emotional-development/relationships">Relationships</a>
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/personal-social-and-emotional-development/relationships">Relationships</a>
             </li>
           </ul>
         </li>
@@ -78,19 +87,19 @@
       </div>
       <ul class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'literacy-index' }} app-mobile-nav__list app-mobile-nav__subnav app-mobile-nav__subnav--topic-four js-app-mobile-nav-subnav">
         <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'literacy-index' }} app-mobile-nav__subnav-item">
-          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/literacy/literacy-index">Overview</a>
+          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/literacy/literacy-index">Overview</a>
         </li>
         <li>
           <ul class="app-mobile-nav__list">
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'comprehension' }} app-mobile-nav__subnav-item">
-              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/literacy/comprehension">Comprehension</a>
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/literacy/comprehension">Comprehension</a>
             </li>
       
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'word-reading' }} app-mobile-nav__subnav-item">
-              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/literacy/word-reading">Word reading</a>
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/literacy/word-reading">Word reading</a>
             </li>
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'writing' }} app-mobile-nav__subnav-item">
-              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/literacy/writing">Writing</a>
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/literacy/writing">Writing</a>
             </li>
           </ul>
         </li>
@@ -104,18 +113,18 @@
       {# Experiment #}
       <ul class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'maths-index' }} app-mobile-nav__list app-mobile-nav__subnav app-mobile-nav__subnav--topic-five js-app-mobile-nav-subnav">
         <li class="{{ 'app-mobile-nav__subnav--active app-mobile-nav__subnav-item--current' if activePage == 'maths-index' }} app-mobile-nav__subnav-item">
-          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/maths/maths-index">Overview</a>
+          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/maths/maths-index">Overview</a>
         </li>
         <li>
           <ul class="app-mobile-nav__list">
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'numbers-in-context' }} app-mobile-nav__subnav-item">
-              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/maths/numbers">Numbers</a>
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/maths/numbers">Numbers</a>
             </li>
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'patterns-and-connections' }} app-mobile-nav__subnav-item">
-              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/maths/patterns-and-connections">Patterns and connections</a>
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/maths/patterns-and-connections">Patterns and connections</a>
             </li>
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'reasoning' }} app-mobile-nav__subnav-item">
-              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/maths/reasoning">Reasoning</a>
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/maths/reasoning">Reasoning</a>
             </li>
           </ul>
         </li>
@@ -129,18 +138,18 @@
       </div>
       <ul class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'understanding-the-world-index' }} app-mobile-nav__list app-mobile-nav__subnav app-mobile-nav__subnav--topic-six js-app-mobile-nav-subnav">
         <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'understanding-the-world-index' }} app-mobile-nav__subnav-item">
-          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/understanding-the-world/understanding-the-world-index">Overview</a>
+          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/understanding-the-world/understanding-the-world-index">Overview</a>
         </li>
         <li>
           <ul class="app-mobile-nav__list">
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'personal-experiences' }} app-mobile-nav__subnav-item">
-              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/understanding-the-world/personal-experiences">Personal experiences</a>
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/understanding-the-world/personal-experiences">Personal experiences</a>
             </li>
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'diverse-world' }} app-mobile-nav__subnav-item">
-              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/understanding-the-world/diverse-world">Diverse world</a>
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/understanding-the-world/diverse-world">Diverse world</a>
             </li>
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'widening-vocabulary' }} app-mobile-nav__subnav-item">
-              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/understanding-the-world/widening-vocabulary">Widening vocabulary</a>
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/understanding-the-world/widening-vocabulary">Widening vocabulary</a>
             </li>
           </ul>
         </li>
@@ -153,18 +162,18 @@
       </div>
       <ul class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'expressive-arts-and-design-index' }} app-mobile-nav__list app-mobile-nav__subnav app-mobile-nav__subnav--topic-seven js-app-mobile-nav-subnav">
         <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'expressive-arts-and-design-index' }} app-mobile-nav__subnav-item">
-          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/expressive-arts-and-design/expressive-arts-and-design-index">Overview</a>
+          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/expressive-arts-and-design/expressive-arts-and-design-index">Overview</a>
         </li>
         <li>
           <ul class="app-mobile-nav__list">
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'imagination-and-creativity' }} app-mobile-nav__subnav-item">
-              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/expressive-arts-and-design/imagination-and-creativity">Imagination and creativity</a>
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/expressive-arts-and-design/imagination-and-creativity">Imagination and creativity</a>
             </li>
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'self-expression' }} app-mobile-nav__subnav-item">
-              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/expressive-arts-and-design/exploration-of-materials">Exploration of materials</a>
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/expressive-arts-and-design/exploration-of-materials">Exploration of materials</a>
             </li>
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'communicating-through-arts' }} app-mobile-nav__subnav-item">
-              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/DevVersion1/expressive-arts-and-design/communicating-through-arts">Communicating through arts</a>
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/expressive-arts-and-design/communicating-through-arts">Communicating through arts</a>
             </li>
           </ul>
         </li>
@@ -200,12 +209,5 @@
         </li>
       </ul>
     </li>
-
-
-
-
-
-
-
   </ul>
 </nav>

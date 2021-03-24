@@ -19,14 +19,28 @@ $(document).ready(function () {
 // Open/close mobile nav
 const menuButton = document.querySelector('.js-app-mobile-nav-toggler');
 const mobileSubNav = document.querySelector('.app-subnav--mobile');
-console.log(menuButton)
 
-menuButton.onclick = () => {
-  menuButton.classList.toggle('is-active');
-  mobileSubNav.classList.toggle('app-mobile-nav--active');
+//Set aria attributes when JS is available
+menuButton.setAttribute('aria-expanded', 'false')
+mobileSubNav.setAttribute('aria-hidden', 'true')
 
-  // TODO: Close all the subLinks sections when we close the mobile nav
-}
+
+menuButton.addEventListener('click', function() {
+  //Menu open
+  if (menuButton.classList.contains('is-active')) {
+    menuButton.classList.add('is-active');
+    mobileSubNav.classList.add('app-mobile-nav--active');
+    console.log('open')
+    menuButton.setAttribute('aria-expanded', 'false')
+    mobileSubNav.setAttribute('aria-hidden', 'true')
+  } else { //menu closed//
+    menuButton.classList.remove('is-active');
+    mobileSubNav.classList.remove('app-mobile-nav--active');
+    console.log('closed')
+    menuButton.setAttribute('aria-expanded', 'true')
+    mobileSubNav.setAttribute('aria-hidden', 'false')
+  }
+});
 
 // // Sub navigation
 
@@ -38,11 +52,14 @@ const subNavActive = ('app-mobile-nav__subnav--active')
 Array.from(subLinks).forEach(link => {
 
   // listen for a click on subLinks
-  link.addEventListener('click', function() {
+  link.addEventListener('click', function(e) {
+    //rules for aria attributes when submenu is closed
+    e.preventDefault();
     if (this.nextElementSibling.classList.contains(subNavActive)) {
       this.nextElementSibling.classList.remove(subNavActive)
       this.setAttribute('aria-expanded', 'false')
       this.nextElementSibling.setAttribute('aria-hidden', 'true')
+    //rules for aria attributes when submenu is open
     } else {
       this.nextElementSibling.classList.add(subNavActive)
       this.setAttribute('aria-expanded', 'true')
@@ -57,7 +74,6 @@ const stickyMenu = document.querySelector('.js-app-mobile-nav-toggler');
 const mobileStickySubNav = document.querySelector('.app-subnav--mobile');
 
 stickyMenu.onclick = () => {
-  console.log("open")
   stickyMenu.classList.toggle('is-active');
   mobileStickySubNav.classList.toggle('app-mobile-nav--active');
 }

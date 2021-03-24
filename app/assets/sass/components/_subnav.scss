@@ -32,30 +32,17 @@
 }
 
 
+// .app-subnav--mobile .app-subnav__section {
 
+//   display: none;
 
+// }
 
-.app-subnav--mobile {
+// .app-subnav--mobile .app-subnav__link.is-active + .app-subnav__section {
 
-  display: none;
+//   display: block;
 
-  &.is-open {
-    display: block;
-
-  }
-}
-
-.app-subnav--mobile .app-subnav__section {
-
-  display: none;
-
-}
-
-.app-subnav--mobile .app-subnav__link.is-active + .app-subnav__section {
-
-  display: block;
-
-}
+// }
 
 
 
