@@ -30,13 +30,11 @@ menuButton.addEventListener('click', function() {
   if (menuButton.classList.contains('is-active')) {
     menuButton.classList.add('is-active');
     mobileSubNav.classList.add('app-mobile-nav--active');
-    console.log('open')
     menuButton.setAttribute('aria-expanded', 'false')
     mobileSubNav.setAttribute('aria-hidden', 'true')
   } else { //menu closed//
     menuButton.classList.remove('is-active');
     mobileSubNav.classList.remove('app-mobile-nav--active');
-    console.log('closed')
     menuButton.setAttribute('aria-expanded', 'true')
     mobileSubNav.setAttribute('aria-hidden', 'false')
   }
@@ -46,7 +44,7 @@ menuButton.addEventListener('click', function() {
 
 // // Loop through and find all the sub headings
 const subLinks = document.querySelectorAll('.app-mobile-nav-subnav-toggler');
-const subNavActive = ('app-mobile-nav__subnav--active')
+const subNavActive = ('app-mobile-nav__subnav--active');
 
 // build an array of the subLinks
 Array.from(subLinks).forEach(link => {
@@ -57,12 +55,12 @@ Array.from(subLinks).forEach(link => {
     e.preventDefault();
     if (this.nextElementSibling.classList.contains(subNavActive)) {
       this.nextElementSibling.classList.remove(subNavActive)
-      this.setAttribute('aria-expanded', 'false')
+      this.firstElementChild.setAttribute('aria-expanded', 'false')
       this.nextElementSibling.setAttribute('aria-hidden', 'true')
     //rules for aria attributes when submenu is open
     } else {
       this.nextElementSibling.classList.add(subNavActive)
-      this.setAttribute('aria-expanded', 'true')
+      this.firstElementChild.setAttribute('aria-expanded', 'true')
       this.nextElementSibling.setAttribute('aria-hidden', 'false')
     }
   });

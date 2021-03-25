@@ -323,6 +323,10 @@
 
 .app-subnav--mobile {
   display: block;
+  
+  @include govuk-media-query($from: tablet) {
+    display:none;
+  }
 }
   
 .js-enabled .app-subnav--mobile {
@@ -331,5 +335,9 @@
 
 .js-enabled .app-mobile-nav--active.app-subnav--mobile {
   display: block;
+
+  @include govuk-media-query($from: tablet) {
+    display:none;
+  }
 }
   

@@ -9,10 +9,10 @@
         </a>
       </div>
 
-      <ul id="eyfs-subnav-1" class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'communication-and-language-index' }} app-mobile-nav__list app-mobile-nav__subnav app-mobile-nav__subnav--topic-one js-app-mobile-nav-subnav">
+      <ul id="eyfs-subnav-1" class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'communication-and-language-index' }} app-mobile-nav__list app-mobile-nav__subnav js-app-mobile-nav-subnav">
 
         <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'communication-and-language-index' }} app-mobile-nav__subnav-item">
-          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" {% if activePage == 'communication-and-language-index' %} aria-current="page" {% endif %} href="/main/DevVersion1/communication-and-language/communication-and-language-index">Overview</a>
+          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" {% if activePage == 'communication-and-language-index' %} aria-current="page" {% endif %} href="/main/DevVersion1/communication-and-language/communication-and-language-index">Communication and language overview</a>
         </li>
 
         <li>
@@ -28,19 +28,23 @@
             </li>
           </ul>
         </li>
+
       </ul>
+
     </li>
 
     <li>
 
-      <div class="app-mobile-nav-subnav-toggler topic-two">
-        <a class="govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler" href="javascript:void(0);">Physical development</a>
+      <div class="app-mobile-nav-subnav-toggler">
+        <a class="govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler" aria-controls="eyfs-subnav-2" href="/main/DevVersion1/physical-development/physical-development-index">Physical development</a>
       </div>
 
-      <ul class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'physical-development-index' }} app-mobile-nav__list app-mobile-nav__subnav app-mobile-nav__subnav--topic-two js-app-mobile-nav-subnav">
+      <ul id="eyfs-subnav-2" class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'physical-development-index' }} app-mobile-nav__list app-mobile-nav__subnav js-app-mobile-nav-subnav">
+
         <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'physical-development-index' }} app-mobile-nav__subnav-item">
-          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/physical-development/physical-development-index">Overview</a>
+          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" {% if activePage == 'physical-development-index' %} aria-current="page" {% endif %} href="/main/DevVersion1/physical-development/physical-development-index">Physical development overview</a>
         </li>
+
         <li>
           <ul class="app-mobile-nav__list">
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'core-strength-and-coordination' }} app-mobile-nav__subnav-item">
@@ -54,17 +58,22 @@
             </li>
           </ul>
         </li>
+
       </ul>
+
     </li>
 
     <li>
-      <div class="app-mobile-nav-subnav-toggler topic-three">
-        <a class="govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler" href="javascript:void(0);">Personal, social and emotional development</a>
+      <div class="app-mobile-nav-subnav-toggler">
+        <a class="govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler" aria-controls="eyfs-subnav-3" href="/main/DevVersion1/personal-social-and-emotional-development/personal-social-and-emotional-development-index">Personal, social and emotional development</a>
       </div>
-      <ul class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'personal-social-and-emotional-development-index' }} app-mobile-nav__list app-mobile-nav__subnav app-mobile-nav__subnav--topic-three js-app-mobile-nav-subnav">
+
+      <ul id="eyfs-subnav-3" class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'personal-social-and-emotional-development-index' }} app-mobile-nav__list app-mobile-nav__subnav js-app-mobile-nav-subnav">
+      
         <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'personal-social-and-emotional-development-index' }} app-mobile-nav__subnav-item">
-          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/personal-social-and-emotional-development/personal-social-and-emotional-development-index">Overview</a>
+          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" {% if activePage == 'personal-social-and-emotional-development-index' %} aria-current="page" {% endif %} href="/main/DevVersion1/personal-social-and-emotional-development/personal-social-and-emotional-development-index">Personal, social and emotional development overview</a>
         </li>
+
         <li>
           <ul class="app-mobile-nav__list">
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'emotions' }} app-mobile-nav__subnav-item">
@@ -78,17 +87,22 @@
             </li>
           </ul>
         </li>
+
       </ul>
+
     </li>
 
     <li>
-      <div class="app-mobile-nav-subnav-toggler topic-four">
-        <a class="govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler" href="javascript:void(0);">Literacy</a>
+      <div class="app-mobile-nav-subnav-toggler">
+        <a class="govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler" aria-controls="eyfs-subnav-4" href="/main/DevVersion1/literacy/literacy-index">Literacy</a>
       </div>
-      <ul class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'literacy-index' }} app-mobile-nav__list app-mobile-nav__subnav app-mobile-nav__subnav--topic-four js-app-mobile-nav-subnav">
+
+      <ul id="eyfs-subnav-4" class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'literacy-index' }} app-mobile-nav__list app-mobile-nav__subnav js-app-mobile-nav-subnav">
+
         <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'literacy-index' }} app-mobile-nav__subnav-item">
-          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/literacy/literacy-index">Overview</a>
+          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" {% if activePage == 'literacy-index' %} aria-current="page" {% endif %} href="/main/DevVersion1/literacy/literacy-index">Literacy overview</a>
         </li>
+
         <li>
           <ul class="app-mobile-nav__list">
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'comprehension' }} app-mobile-nav__subnav-item">
@@ -103,18 +117,21 @@
             </li>
           </ul>
         </li>
+
       </ul>
+
     </li>
 
     <li>
-      <div class="app-mobile-nav-subnav-toggler topic-five">
-        <a class="govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler" href="javascript:void(0);">Maths</a>
+      <div class="app-mobile-nav-subnav-toggler">
+        <a class="govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler" aria-controls="eyfs-subnav-5" href="/main/DevVersion1/maths/maths-index">Maths</a>
       </div>
-      {# Experiment #}
-      <ul class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'maths-index' }} app-mobile-nav__list app-mobile-nav__subnav app-mobile-nav__subnav--topic-five js-app-mobile-nav-subnav">
+
+      <ul id="eyfs-subnav-5" class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'maths-index' }} app-mobile-nav__list app-mobile-nav__subnav js-app-mobile-nav-subnav">
         <li class="{{ 'app-mobile-nav__subnav--active app-mobile-nav__subnav-item--current' if activePage == 'maths-index' }} app-mobile-nav__subnav-item">
-          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/maths/maths-index">Overview</a>
+          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" {% if activePage == 'maths-index' %} aria-current="page" {% endif %} href="/main/DevVersion1/maths/maths-index">Maths overview</a>
         </li>
+
         <li>
           <ul class="app-mobile-nav__list">
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'numbers-in-context' }} app-mobile-nav__subnav-item">
@@ -128,18 +145,22 @@
             </li>
           </ul>
         </li>
+
       </ul>
-      {# End of experiment #}
+
     </li>
 
     <li>
-      <div class="app-mobile-nav-subnav-toggler topic-six">
-        <a class="govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler" href="javascript:void(0);">Understanding the world</a>
+      <div class="app-mobile-nav-subnav-toggler">
+        <a class="govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler" aria-controls="eyfs-subnav-6" href="/main/DevVersion1/understanding-the-world/understanding-the-world-index">Understanding the world</a>
       </div>
-      <ul class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'understanding-the-world-index' }} app-mobile-nav__list app-mobile-nav__subnav app-mobile-nav__subnav--topic-six js-app-mobile-nav-subnav">
+
+      <ul id="eyfs-subnav-6" class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'understanding-the-world-index' }} app-mobile-nav__list app-mobile-nav__subnav js-app-mobile-nav-subnav">
+
         <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'understanding-the-world-index' }} app-mobile-nav__subnav-item">
-          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/understanding-the-world/understanding-the-world-index">Overview</a>
+          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" {% if activePage == 'understanding-the-world-index' %} aria-current="page" {% endif %} href="/main/DevVersion1/understanding-the-world/understanding-the-world-index">Understanding the world overview</a>
         </li>
+
         <li>
           <ul class="app-mobile-nav__list">
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'personal-experiences' }} app-mobile-nav__subnav-item">
@@ -153,17 +174,22 @@
             </li>
           </ul>
         </li>
+
       </ul>
+
     </li>
 
     <li>
-      <div class="app-mobile-nav-subnav-toggler topic-seven">
-        <a class="govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler" href="javascript:void(0);">Expressive arts and design</a>
+      <div class="app-mobile-nav-subnav-toggler">
+        <a class="govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler" aria-controls="eyfs-subnav-7" href="/main/DevVersion1/expressive-arts-and-design/expressive-arts-and-design-index">Expressive arts and design</a>
       </div>
-      <ul class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'expressive-arts-and-design-index' }} app-mobile-nav__list app-mobile-nav__subnav app-mobile-nav__subnav--topic-seven js-app-mobile-nav-subnav">
+
+      <ul id="eyfs-subnav-7" class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'expressive-arts-and-design-index' }} app-mobile-nav__list app-mobile-nav__subnav js-app-mobile-nav-subnav">
+
         <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'expressive-arts-and-design-index' }} app-mobile-nav__subnav-item">
-          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/main/Round5Version1/expressive-arts-and-design/expressive-arts-and-design-index">Overview</a>
+          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" {% if activePage == 'expressive-arts-and-design-index' %} aria-current="page" {% endif %} href="/main/DevVersion1/expressive-arts-and-design/expressive-arts-and-design-index">Expressive arts and design overview</a>
         </li>
+
         <li>
           <ul class="app-mobile-nav__list">
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'imagination-and-creativity' }} app-mobile-nav__subnav-item">
@@ -181,13 +207,16 @@
     </li>
 
     <li>
-      <div class="app-mobile-nav-subnav-toggler topic-eight">
-        <a class="govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler" href="javascript:void(0);">Get help to improve your practice</a>
+      <div class="app-mobile-nav-subnav-toggler">
+        <a class="govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler" href="../get-help-to-improve-your-practice/ghtiyp-index">Get help to improve your practice</a>
       </div>
-      <ul class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'ghtiyp-index' }} app-mobile-nav__list app-mobile-nav__subnav app-mobile-nav__subnav--topic-eight js-app-mobile-nav-subnav">
+
+      <ul class="{{ 'app-mobile-nav__subnav--active' if activeSection == 'ghtiyp-index' }} app-mobile-nav__list app-mobile-nav__subnav js-app-mobile-nav-subnav">
+
         <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'ghtiyp-index' }} app-mobile-nav__subnav-item">
-          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="../get-help-to-improve-your-practice/ghtiyp-index">Overview</a>
+          <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" {% if activePage == 'ghtiyp-index' %} aria-current="page" {% endif %} href="../get-help-to-improve-your-practice/ghtiyp-index">Get help to improve your practice overview</a>
         </li>
+
         <li>
           <ul class="app-mobile-nav__list">
             <li class="{{ 'app-mobile-nav__subnav-item--current' if activePage == 'planning' }} app-mobile-nav__subnav-item">
@@ -207,7 +236,10 @@
             </li>
           </ul>
         </li>
+
       </ul>
+
     </li>
+    
   </ul>
 </nav>
